@@ -4,7 +4,7 @@
 ## 写作:
 | # | Title | 时间 | 
 |---| ----- | -------- |
-|1|[完美是完成的敌人](https://github.com/MagicalBridge/Blog/issues/2)|2019-06-13|
+|1|[完美是成长的敌人——警惕完美主义](https://github.com/MagicalBridge/Blog/issues/2)|2019-06-13|
 
 
 ## leetCode  Algorithm:
