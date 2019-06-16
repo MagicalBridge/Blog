@@ -11,7 +11,8 @@
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
-|1|[Two Sum](https://leetcode.com/problems/two-sum/)| [java,javaScript](https://github.com/MagicalBridge/Blog/issues/1)|Easy|
+|1|[Two Sum](https://leetcode-cn.com/problems/two-sum/description/)| [java,javaScript](https://github.com/MagicalBridge/Blog/issues/1)|Easy|
+|2|[Add Two Numbers](https://leetcode-cn.com/problems/add-two-numbers/description/)| [java](https://github.com/MagicalBridge/Blog/issues/3)|Medium|
 
 
 
