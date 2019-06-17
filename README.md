@@ -13,6 +13,7 @@
 |---| ----- | -------- | ---------- |--------------|
 |1|[Two Sum](https://leetcode-cn.com/problems/two-sum/description/)| [java,javaScript](https://github.com/MagicalBridge/Blog/issues/1)|Easy|Array|
 |2|[Add Two Numbers](https://leetcode-cn.com/problems/add-two-numbers/description/)| [java](https://github.com/MagicalBridge/Blog/issues/3)|Medium|Linked List|
+|3|[Longest Substring Without Repeating Characters](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)| [java](https://github.com/MagicalBridge/Blog/issues/4)|Medium|String|
 
 
 
