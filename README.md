@@ -1,6 +1,12 @@
 # Blog
 这是我写博客的地方，专注于技术，不限于技术。
 
+## 数据结构:
+
+| # | Title |
+|---| ----- |
+|1|[stack 栈](https://github.com/MagicalBridge/Blog/issues/5)
+
 ## 写作:
 | # | Title | 时间 | 
 |---| ----- | -------- |
