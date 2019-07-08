@@ -13,6 +13,10 @@
 | # | Title | 时间 | 
 |---| ----- | -------- |
 |1|[完美是成长的敌人——警惕完美主义](https://github.com/MagicalBridge/Blog/issues/2)|2019-06-13|
+|2|[这项技能，可能是你实现阶级跃迁最需要学习的](https://github.com/MagicalBridge/Blog/issues/7)|2019-07-01|
+
+
+
 
 
 ## leetCode  Algorithm:
