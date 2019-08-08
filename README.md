@@ -25,6 +25,12 @@
 |3|[插入排序](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/14)
 |4|[快速排序](https://leetcode-cn.com/problems/container-with-most-water/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/15)
 
+## 常见算法题解:
+| # | Title | Solution | Difficulty |
+|---| ----- | -------- | ---------- |
+|1|[设计一个有getMin功能的栈](https://github.com/MagicalBridge/Blog/issues/12)| [java](https://github.com/MagicalBridge/Blog/issues/12)|easy|
+
+
 
 
 ## leetCode  Algorithm:
