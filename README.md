@@ -29,6 +29,7 @@
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
 |1|[设计一个有getMin功能的栈](https://github.com/MagicalBridge/Blog/issues/12)| [java](https://github.com/MagicalBridge/Blog/issues/12)|easy|
+|2|[由两个栈组成的队列](https://github.com/MagicalBridge/Blog/issues/13)| [java](https://github.com/MagicalBridge/Blog/issues/13)|easy|
 
 
 
