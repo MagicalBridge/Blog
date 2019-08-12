@@ -5,6 +5,7 @@
 | # | Title |
 |---| ----- |
 |1|[优秀的React组件设计原则之：组合和复用](https://github.com/MagicalBridge/Blog/issues/14)
+|2|[让你一次性理解React Hooks](https://github.com/MagicalBridge/Blog/issues/14)
 
 
 ## 数据结构:
@@ -26,10 +27,10 @@
 ## 排序算法:
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
-|1|[冒泡排序](https://leetcode-cn.com/problems/two-sum/description/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/12)
-|2|[选择排序](https://leetcode-cn.com/problems/add-two-numbers/description/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/13)
-|3|[插入排序](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/14)
-|4|[快速排序](https://leetcode-cn.com/problems/container-with-most-water/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/15)
+|1|[冒泡排序](https://leetcode-cn.com/problems/two-sum/description/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/12)|easy
+|2|[选择排序](https://leetcode-cn.com/problems/add-two-numbers/description/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/13)|easy
+|3|[插入排序](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/14)|easy
+|4|[快速排序](https://leetcode-cn.com/problems/container-with-most-water/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/15)|medium
 
 ## 常见算法题解:
 | # | Title | Solution | Difficulty |
