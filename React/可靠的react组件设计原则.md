@@ -16,7 +16,7 @@
 
 让我们来看一个常见的前端应用组合模式。应用由头部的header,底部的footer，左侧的sidebar,还有中间的有效内容联合而成：
 
-图片
+![image text](./image/组合后的图示.png)
 
 ```html
   <div id="root"></div>
