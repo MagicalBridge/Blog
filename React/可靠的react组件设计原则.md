@@ -11,12 +11,12 @@
 幸运的是，组合易于理解——把一组小的片段，联合起来，创建一个更大的片段。
 
 让我们放一张乐高的积木图来形象的理解这种方式：
-![image text](./image/大黄蜂乐高图.jpg)
 
+![image](https://github.com/MagicalBridge/Blog/raw/master/React/image/大黄蜂乐高图.jpg)
 
 让我们来看一个常见的前端应用组合模式。应用由头部的header,底部的footer，左侧的sidebar,还有中间的有效内容联合而成：
 
-![image text](./image/组合后的图示.png)
+![image](https://github.com/MagicalBridge/Blog/raw/master/React/image/组合后的图示.png)
 
 ```html
   <div id="root"></div>
