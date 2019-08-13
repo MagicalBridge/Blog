@@ -7,6 +7,10 @@
 |1|[优秀的React组件设计原则之：组合和复用](https://github.com/MagicalBridge/Blog/issues/14)
 |2|[让你一次性理解React Hooks](https://github.com/MagicalBridge/Blog/issues/14)
 
+## Vue
+| # | Title |
+|---| ----- |
+|1|[Vue中watch高级用法](https://github.com/MagicalBridge/Blog/issues/15)
 
 ## 数据结构:
 
