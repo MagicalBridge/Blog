@@ -29,13 +29,6 @@
 |5|[理解这句话，少走5年弯路——大多数人缺少的，其实并不是机遇](https://github.com/MagicalBridge/Blog/issues/10)|2019-07-27|
 |6|[我从聊天中得到的感悟](https://github.com/MagicalBridge/Blog/issues/17)|2019-08-12|
 
-## 排序算法:
-| # | Title | Solution | Difficulty |
-|---| ----- | -------- | ---------- |
-|1|[冒泡排序](https://leetcode-cn.com/problems/two-sum/description/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/12)|easy
-|2|[选择排序](https://leetcode-cn.com/problems/add-two-numbers/description/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/13)|easy
-|3|[插入排序](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/14)|easy
-|4|[快速排序](https://leetcode-cn.com/problems/container-with-most-water/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/15)|medium
 
 ## 常见算法题解:
 | # | Title | Solution | Difficulty |
