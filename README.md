@@ -4,7 +4,7 @@
 ## React
 | # | Title |
 |---| ----- |
-|1|[优秀的React组件设计原则之：组合和复用](https://github.com/MagicalBridge/Blog/issues/14)
+|1|[React组件设计原则之：组合和复用](https://github.com/MagicalBridge/Blog/issues/14)
 |2|[让你一次性理解React Hooks](https://github.com/MagicalBridge/Blog/issues/14)
 
 ## Vue
