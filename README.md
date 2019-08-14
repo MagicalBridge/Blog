@@ -26,10 +26,8 @@
 |2|[这项技能，可能是你实现阶级跃迁最需要学习的](https://github.com/MagicalBridge/Blog/issues/7)|2019-07-01|
 |3|[如果重新回到20岁，我希望这样过自己的生活](https://github.com/MagicalBridge/Blog/issues/8)|2019-07-03|
 |4|[百分之90的人都没有认真思考过的问题，想不清楚，遗憾终生](https://github.com/MagicalBridge/Blog/issues/9)|2019-07-10|
-|5|[理解这句话，少走5年弯路——大多数人缺少的，其实并不是机遇](https://github.com/MagicalBridge/Blog/issues/10)|
-2019-07-27|
-|6|[我从聊天中得到的感悟](https://github.com/MagicalBridge/Blog/issues/17)|
-2019-08-12|
+|5|[理解这句话，少走5年弯路——大多数人缺少的，其实并不是机遇](https://github.com/MagicalBridge/Blog/issues/10)|2019-07-27|
+|6|[我从聊天中得到的感悟](https://github.com/MagicalBridge/Blog/issues/17)|2019-08-12|
 
 ## 排序算法:
 | # | Title | Solution | Difficulty |
