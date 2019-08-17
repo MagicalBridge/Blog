@@ -6,7 +6,7 @@
 |---| ----- |
 |1|[React组件设计原则之：组合和复用](https://github.com/MagicalBridge/Blog/issues/14)
 |2|[React组件设计原则之：纯组件](https://github.com/MagicalBridge/Blog/issues/16)
-|3|[可靠的react组件设计原则之封装](https://github.com/MagicalBridge/Blog/issues/20)
+|3|[React组件设计原则之：封装](https://github.com/MagicalBridge/Blog/issues/20)
 |4|[让你一次性理解React Hooks](https://github.com/MagicalBridge/Blog/issues/14)
 
 ## Vue
