@@ -30,6 +30,7 @@
 |5|[理解这句话，少走5年弯路——大多数人缺少的，其实并不是机遇](https://github.com/MagicalBridge/Blog/issues/10)|2019-07-27|
 |6|[我从聊天中得到的感悟](https://github.com/MagicalBridge/Blog/issues/17)|2019-08-12|
 |7|[不理解人生的阶段性状态,如何规划人生？](https://github.com/MagicalBridge/Blog/issues/18)|2019-08-15|
+|8|[想要有所成就，除了看到努力，我们到底还忽略了什么？](https://github.com/MagicalBridge/Blog/issues/19)|2019-08-16|
 
 
 ## 常见算法题解:
