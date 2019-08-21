@@ -239,3 +239,137 @@ function withModifiedChildren(WrappedComponent) {
 const MyNewComponent = withModifiedChildren(MyComponent);
 ```
 
+让我们通过一个例子来看看 HOC 属性代理技术如何帮助分离职责。
+
+组件 `<PersistentForm>` 由 `input` 输入框和按钮 `save to storage` 组成。更改输入值后，点击 `save to storage` 按钮将其写入到 `localStorage` 中。
+
+`input` 的状态在 `handlechange(event)` 方法中更新。点击按钮，值将保存到本地存储，在 `handleclick()` 中处理：
+
+```js
+class PersistentForm extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { inputValue: localStorage.getItem("inputValue") };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  render() {
+    const { inputValue } = this.state;
+    return (
+      <div className="persistent-form">
+        <input type="text" value={inputValue} onChange={this.handleChange} />
+        <button onClick={this.handleClick}>Save to storage</button>
+      </div>
+    );
+  }
+
+  handleChange(event) {
+    this.setState({
+      inputValue: event.target.value
+    });
+  }
+
+  handleClick() {
+    localStorage.setItem("inputValue", this.state.inputValue);
+  }
+}
+```
+
+遗憾的是： `<PersistentForm>`有 2 个职责：管理表单字段；将输入只保存中 `localStorage`。
+
+让我们重构一下 `<PersistentForm>` 组件，使其只有一个职责：展示表单字段和附加的事件处理程序。它不应该知道如何直接使用存储：
+
+```js
+class PersistentForm extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { inputValue: props.initialValue };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  render() {
+    const { inputValue } = this.state;
+    return (
+      <div className="persistent-form">
+        <input type="text" value={inputValue} onChange={this.handleChange} />
+        <button onClick={this.handleClick}>Save to storage</button>
+      </div>
+    );
+  }
+
+  handleChange(event) {
+    this.setState({
+      inputValue: event.target.value
+    });
+  }
+
+  handleClick() {
+    this.props.saveValue(this.state.inputValue);
+  }
+}
+```
+
+组件从属性初始值接收存储的输入值，并使用属性函数 `saveValue(newValue)` 来保存输入值。这些 props 由使用属性代理技术的 `withpersistence()` HOC 提供。
+
+现在 `<PersistentForm>` 符合 `SRP`。更改的唯一原因是修改表单字段。
+
+```js
+function withPersistence(storageKey, storage) {
+  return function(WrappedComponent) {
+    return class PersistentComponent extends Component {
+      constructor(props) {
+        super(props);
+        this.state = { initialValue: storage.getItem(storageKey) };
+      }
+
+      render() {
+        return (
+          <WrappedComponent
+            initialValue={this.state.initialValue}
+            saveValue={this.saveValue}
+            {...this.props}
+          />
+        );
+      }
+
+      saveValue(value) {
+        storage.setItem(storageKey, value);
+      }
+    };
+  };
+}
+```
+`withPersistence()`是一个 `HOC`，其职责是持久的。它不知道有关表单域的任何详细信息。它只聚焦一个工作：为传入的组件提供 `initialValue` 字符串和 `saveValue()` 函数。
+
+将 `<PersistentForm>` 和 `withpersistence()` 一起使用可以创建一个新组件`<LocalStoragePersistentForm>`。它与本地存储相连，可以在应用程序中使用：
+
+```js
+const LocalStoragePersistentForm = withPersistence('key', localStorage)(PersistentForm);
+const instance = <LocalStoragePersistentForm />;
+```
+只要 `<PersistentForm>` 正确使用 `initialValue` 和 `saveValue()`属性，对该组件的任何修改都不能破坏 `withPersistence()` 保存到存储的逻辑。
+
+反之亦然：只要 `withPersistence()` 提供正确的 `initialValue` 和 `saveValue()`，对 HOC 的任何修改都不能破坏处理表单字段的方式。
+
+SRP的效率再次显现出来：修改隔离，从而减少对系统其他部分的影响。
+
+此外，代码的可重用性也会增加。你可以将任何其他表单 `<MyOtherForm>` 连接到本地存储：
+
+```js
+const LocalStorageMyOtherForm = withPersistence('key', localStorage)(MyOtherForm);
+const instance = <LocalStorageMyOtherForm />;
+```
+你可以轻松地将存储类型更改为 session storage：
+
+```js
+const SessionStoragePersistentForm = withPersistence('key', sessionStorage)(PersistentForm);
+const instance = <SessionStoragePersistentForm />;
+```
+
+初始版本 `<PersistentForm>` 没有隔离修改和可重用性好处，因为它错误地具有多个职责。
+
+在不好分块组合的情况下，属性代理和渲染劫持的 HOC 技术可以使得组件只有一个职责。
+
+
