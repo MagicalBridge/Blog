@@ -51,11 +51,12 @@
 
 | # | Title | Solution | Difficulty |classification|
 |---| ----- | -------- | ---------- |--------------|
-|1|[Two Sum](https://leetcode-cn.com/problems/two-sum/description/)| [java,javaScript](https://github.com/MagicalBridge/Blog/issues/1)|Easy|Array|
+|1|[Two Sum](https://leetcode-cn.com/problems/two-sum/description/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/1)|Easy|Array|
 |2|[Add Two Numbers](https://leetcode-cn.com/problems/add-two-numbers/description/)| [java](https://github.com/MagicalBridge/Blog/issues/3)|Medium|Linked List|
 |3|[Longest Substring Without Repeating Characters](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)| [java](https://github.com/MagicalBridge/Blog/issues/4)|Medium|String|
 |7|[reverse-integer](https://github.com/MagicalBridge/Blog/issues/24)| [JavaScript](https://github.com/MagicalBridge/Blog/issues/24)|easy|String|
-|11|[Container With Most Water](https://leetcode-cn.com/problems/container-with-most-water/)| [java,javaScript](https://github.com/MagicalBridge/Blog/issues/11)|Medium|Array|
+|11|[Container With Most Water](https://leetcode-cn.com/problems/container-with-most-water/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/11)|Medium|Array|
+|26|[Remove Duplicates from Sorted Array](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/submissions/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/25)|easy|Array|
 |35|[Search Insert Position](https://leetcode-cn.com/problems/search-insert-position/submissions/)| [java,javaScript](https://github.com/MagicalBridge/Blog/issues/22)|easy|Array|
 
 
