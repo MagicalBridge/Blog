@@ -159,5 +159,61 @@ function Story(props) {
 }
 ```
 
+### 创建虚拟dom
 
+下面我们看看虚拟dom的真实模样，将下面的jsx代码在控制台打印出来
+
+```html
+<div className="title">
+  <span>Hello ConardLi</span>
+  <ul>
+    <li>苹果</li>
+    <li>橘子</li>
+  </ul>
+</div>
+```
+图片
+
+这个结构和我们上面自己描绘的结构很像，那么react 是如何将我们的代码转换为这个结构的呢？下面我们看看createElement函数具体的实现（源码经过精简）
+
+```js
+ReactElement.createElement = function(type,config,children){
+  var propName;
+  var props = {};
+  var key = null;
+  var ref = null;
+  var self = null;
+  var source = null;
+  if(config != null){
+    // 1、处理props
+  }
+    // 2、获取子元素
+  if(type && type.defaultProps){
+    // 3、处理默认的props
+  }
+  return ReactElement(type,key,ref,self,source,ReactCurrentOwner.current,props)
+}
+```
+createElement 函数内部做的操作其实很简单，将props和子元素，进行处理返回一个 ReactElement 对象，下面我们做逐一分析：
+
+#### （1）处理props：
+```js
+if(config !== null){
+  if(hasValidRef(config)){
+    ref = config.ref
+  }
+  if(hasValidRef(config)){
+    key = ''+config.key;
+  }
+  self = config.__self === undefined ? null: config.__self;
+  source = config.__source === undefined ? null : config.__source
+
+  for(propName in config){
+    if(hasOwnProperty.call(config,propsName)&&
+      !RESERVED_PROPS.hasOwnPrpPerty(propName)){
+        props[propsName] = config[propName]
+    }
+  }
+}
+```
 
