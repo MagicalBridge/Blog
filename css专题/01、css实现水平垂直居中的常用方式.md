@@ -223,7 +223,88 @@ wp是父元素的类名，box是子元素的类名，因为有定宽和不定宽
   text-align: left;
 }
 ```
-这种方法实现起来和理解起来都稍微有些复杂
+这种方法实现起来和理解起来都稍微有些复杂，一般不怎么使用
+
+## table
+曾经table被用来做页面布局，现在没有人这么做了，但是table也能实现水平垂直居中，但是会增加很多冗余的代码
+```html
+<table>
+  <tbody>
+    <tr>
+      <td class="wp">
+        <div class="box">使用table实现水平垂直居中布局</div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+```
+table 单元格中的内容天然就是垂直居中的，只要添加一个水平居中属性就可以了
+```css
+.wp{
+  text-align: center
+}
+.box{
+  display:inline-block;
+}
+```
+这种方式代码台冗余，而且也不是table的正确的用法
+
+## css-table
+
+css新增加的table属性，可以让我们把普通的元素，变成table元素，通过这个特性也能够实现水平垂直居中
+```html
+<div class="wp">
+  <div class="box">css-table属性实现水平垂直居中</div>
+</div>
+```
+下面通过css属性，可以让div显示和table一样
+```css
+.wp {
+  display: table-cell; // 这个属性非常重要
+  text-align: center;
+  vertical-align: middle;
+}
+.box {
+  display: inline-block;
+}
+```
+这种方式和table一样的原理，但是没有那么多的冗余代码，兼容性也还不错
+
+## flex
+flex 作为现代的布局方案，颠覆了过去的经验，只需要几行代码就可以优雅的做到水平垂直居中
+```html
+<div class="wp">
+  <div class="box">flex布局实现水平垂直居中</div>
+</div>
+```
+```css
+.wp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+```
+目前在移动端已经完全可以使用flex，PC端需要看看自己的业务情况
+
+## grid
+css 新出的网格布局，由于兼容性并不是很好，一直没有关注过，通过grid也可以实现水平垂直居中
+```html
+<div class="wp">
+  <div class="box">grid布局实现水平垂直居中</div>
+</div>
+```
+```css
+.wp {
+  display: grid;
+}
+.box {
+  align-self: center;
+  justify-self: center;
+}
+```
+代码量也很少，但兼容性不如flex，不推荐使用
+
+
 
 
 
