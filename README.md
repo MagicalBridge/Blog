@@ -1,6 +1,11 @@
 # Blog
 这是我写博客的地方，专注于技术，不限于技术。
 
+## 模块化
+| # | Title |
+|---| ----- |
+|1|[js中常见的模块化](https://github.com/MagicalBridge/Blog/blob/master/%E6%A8%A1%E5%9D%97%E5%8C%96/%E6%A8%A1%E5%9D%97%E5%8C%96.md)
+
 ## React
 | # | Title |
 |---| ----- |
