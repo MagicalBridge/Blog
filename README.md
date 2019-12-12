@@ -62,6 +62,7 @@
 |7|[reverse-integer](https://github.com/MagicalBridge/Blog/issues/24)| [JavaScript](https://github.com/MagicalBridge/Blog/issues/24)|easy|String|
 |11|[Container With Most Water](https://leetcode-cn.com/problems/container-with-most-water/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/11)|Medium|Array|
 |26|[Remove Duplicates from Sorted Array](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/submissions/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/25)|easy|Array|
+|27|[Remove Element](https://leetcode-cn.com/problems/remove-element/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/27)|easy|Array|
 |35|[Search Insert Position](https://leetcode-cn.com/problems/search-insert-position/submissions/)| [java,javaScript](https://github.com/MagicalBridge/Blog/issues/22)|easy|Array|
 
 
