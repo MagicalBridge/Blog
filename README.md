@@ -72,6 +72,8 @@
 
 |35|[Search Insert Position](https://leetcode-cn.com/problems/search-insert-position/submissions/)| [java,javaScript](https://github.com/MagicalBridge/Blog/issues/22)|easy|Array|
 
+|83|[](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/submissions/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/28)|easy|Linked List|
+
 
 
 
