@@ -65,18 +65,17 @@
 // 最开始的时候两个指针都指向第一个数字，如果两个指针指的数字相同，则快指针向前走一步，如果不同则两个指针都向前走一步，这样当快
 // 指针走完整个数组之后，慢指针当前的坐标加上1
 var removeDuplicates = function (nums) {
-  let pre = 0; // 慢指针
-  let cur = 0; // 快指针
-  let n = nums.length;
-  // 循环的条件 为什么是快指针小于n呢 这个仔细思考
-  while (cur < n) {
-    if (nums[pre] === nums[cur]) { // 如果相同 
-      cur++; // 快指针加1
-    } else {
-      pre++;
-      cur++;
+  if (nums === undefined || nums.length === 0) {
+    return null
+  }
+
+  let i = 0;
+  for (let j = 1; j < nums.length; j++) {
+    if(nums[j] !== nums[i]){ // 已经跳过了重复项数据
+      i++
+      nums[i] = nums[j]
     }
   }
-  return nums.length === 0 ? 0 : (pre + 1)
+  return i+1
 };
 
