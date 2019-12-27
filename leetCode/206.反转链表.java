@@ -33,7 +33,6 @@
 // 这不知道是第几次看这个题目了, 这道题目为了增加难度,希望使用迭代和递归两种方式来实现，
 // 对于迭代的方法: 思路是在原链表之前建立一个空的 newHead 因为首节点会变，然后从head开始
 // 将之后的一个节点移动到 newHead 之后，重复这个操作 直到 head 成为成为最后一个节点为止
-
 class Solution {
     public ListNode reverseList(ListNode head) {
         ListNode pre = null;
