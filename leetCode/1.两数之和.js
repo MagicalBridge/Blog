@@ -24,6 +24,30 @@
  *
  *
  */
+
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+var twoSum = function (nums, target) {
+  if (nums === undefined || nums.length === 0) {
+    return nums
+  }
+  // 创建结果数组
+  let resArr = [];
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[i] === target - nums[j]) {
+        resArr.push(i)
+        resArr.push(j)
+        break; // 找到一组就跳出循环
+      }
+    }
+  }
+  return resArr
+};
+
 /**
  * @param {number[]} nums
  * @param {number} target
