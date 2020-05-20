@@ -53,22 +53,35 @@ var twoSum = function (nums, target) {
  * @param {number} target
  * @return {number[]}
  */
-var twoSum = function(nums, target) {
-  let map = new Map();
+// 第二种 方式是使用map集合这种数据结构
+// 首先遍历一遍数组，对数组做一个集合映射
+var twoSum = function (nums, target) {
+  if (nums === undefined || nums.length === 0) {
+    return null
+  }
   let res = [];
-  // 第一遍遍历数组做map 映射
+  // 创建map数据结构
+  let map = new Map();
   for (let i = 0; i < nums.length; i++) {
+    // 将数组的值做一个映射
     map.set(nums[i], i);
   }
-  // 第二遍 进行查找
+  console.log(map); // Map { 2 => 0, 7 => 1, 11 => 2, 15 => 3 } 这种数据结构应该深深的印在自己的脑脑海中  
+  // 第二次对数组进行遍历
   for (let index = 0; index < nums.length; index++) {
+    // 将目标值拿拿出来 没遍历一个数 将对应的t找到
     let t = target - nums[index];
-
-    if (map.has(t) && map.get(t) != index) {
+    // map 中常用的操作方法 has 代表查找指定的值,如果能够查找到返回true
+    // 查找不到返回false 
+    if (map.has(t) && map.get(t) !== index ) { // 不能是他本身
       res.push(index);
       res.push(map.get(t));
       break;
     }
   }
-  return res;
 };
+
+let nums = [2, 7, 11, 15];
+let target = 9;
+
+console.log(twoSum(nums, target));
