@@ -1,0 +1,39 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-06-17 10:04:08
+ * @LastEditTime: 2020-06-17 11:55:59
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /dailyWork/myBlog/模块化/CMD/index.html
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>sea.js</title>
+</head>
+
+<body>
+  <h1>Content</h1>
+  <script src="vender/sea.js"></script>
+  <script>
+    // 在页面中加载主模块
+    seajs.use("./vender/main");
+  </script>
+  <div>
+    这里跟第一个例子是同样的依赖结构, 即 main 依赖于 add 和 square  square又依赖 multiply
+    我们在浏览器中打开 index.html  打印顺序为:
+    
+    加载了 add 模块
+    2
+    加载了 square 模块
+    加载了 multiply 模块
+    9
+
+    CMD 其实就是sea.js 在推广过程中 对模块定义的规范化产出
+    主要内容就是描述该如何定义模块，如何引入模块，如何导出模块，只要你按照这个规范书写代码，sea.js 就能正确的进行解析。
+  </div>
+</body>
+
+</html>
