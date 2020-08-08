@@ -187,3 +187,170 @@ render方法触发组件的重新渲染
 此方法在组价被卸载时候调用，可以在这里执行一些清理工作，比如清除组件中使用的定时器，清除`componentDidMount`中手动创建的DOM元素等等，避免内存泄露。
 
 
+## React 16.4的生命周期
+
+变更缘由
+
+原来 react16.0之前的生命周期在react16 推出的 Fiber 之后就不合适了，因为如果要开启 async rendering 在render函数之前的所有函数，都有可能执行多次。
+
+componentWillMount、componentWillReceiveProps shouldComponentUpdate componentWillUpdate
+
+如果开发者开了async rendering 而且又在以上这些 render 前执行的生命周期方法做ajax请求的话，那ajax将被无谓的多次调用，明显不是我们期望的结果，而且在 componentWillMount 里面发起请求不管多快得到结果也赶不上首次render，所以IO操作 放在 componentDidMount 中是更为合适的。
+
+除了 shouldComponentUpdate 其他在render函数之前的函数 (`componentWillMount componentWillReceiveProps componentWillUpdate`) 都将被 getDerivedStateFromProps 替代。
+
+也就是说，使用一个静态函数 getDerivedStateFromProps 来取代即将被废弃的这几个生命周期函数，就是强制开发者在render之前只做无副作用的操作。
+
+react16 刚推出的时候 增加了一个 componentDidCatch 生命周期函数，这只是一个增量式的修改，完全不影响原有的生命周期函数，但是到了 react16.3 版本 推出了大改动，引入了两个新的生命周期函数：
+
+getDerivedStateFromProps， getSnapshotBeforeUpdate
+
+在16.4版本中 让 getDerivedStateFromProps 无论是挂载(mounting）还是 更新(updating)也无论是什么引起的更新，全部都会被调用。
+
+这个生命周期就是为了替代 componentWillReceiveProps存在的，所以在你需要使用componentWillReceiveProps的时候，就可以考虑使用getDerivedStateFromProps来进行替代了。
+
+两者的参数是不相同的，而getDerivedStateFromProps是一个静态函数，也就是这个函数不能通过this访问到class的属性，也并不推荐直接访问属性。而是应该通过参数提供的nextProps以及prevState来进行判断，根据新传入的props来映射到state。
+
+react16.4之后 getDerivedStateFromProps(nextProps,prevState) 在组件创建时和更新时的render 方法之前被调用，值得注意的是，如果props传入的内容不需要影响你的state，那么你就返回一个null，这个返回值是必须的，所以尽量写在函数末尾。
+
+```js
+static getDerivedStateFromProps(nextProps, prevState) {
+  const {type} = nextProps;
+  // 当传入的type发生变化的时候，更新state
+  if (type !== prevState.type) {
+    return {
+      type,
+    };
+  }
+  // 否则，对于state不进行任何操作
+  return null;
+}
+```
+
+总结一下，getDerivedStateFromProps 的作用就是为了让 props 能更新到组件内部 state 中，它的可能使用场景大概有两个:
+
+* 无条件的根据props来更新内部state，也就是只要有传入 prop 值， 就更新 state
+
+我们来看一个例子：
+
+假设我们有个一个表格组件，它会根据传入的列表数据来更新视图。
+
+```js
+class Table extends React.Component {
+  state = {
+    list: []
+  }
+  static getDerivedStateFromProps (props, state) {
+    return {
+      list: props.list
+    }
+  }
+  render () {
+    .... // 展示 list
+  }
+}
+```
+上面的例子就是第一种使用场景，但是无条件从 prop 中更新 state，我们完全没必要使用这个生命周期，直接对 prop 值进行操作就好了，无需用 state 进行一个值的映射。
+
+
+* 只有 prop 值和 state 值不同时才更新 state 值
+再看一个例子，这个例子是一个颜色选择器，这个组件能选择相应的颜色并显示，同时它能根据传入 prop 值显示颜色。
+
+```js
+Class ColorPicker extends React.Component {
+  state = {
+    color: '#000000'
+  }
+  static getDerivedStateFromProps (props, state) {
+    if (props.color !== state.color) {
+      return {
+        color: props.color
+      }
+    }
+    return null
+  }
+  ... // 选择颜色方法
+  render () {
+    .... // 显示颜色和选择颜色操作
+  }
+}
+```
+
+现在我们可以这个颜色选择器来选择颜色，同时我们能传入一个颜色值并显示。但是这个组件有一个 bug，如果我们传入一个颜色值后，再使用组件内部的选择颜色方法，我们会发现颜色不会变化，一直是传入的颜色值。
+
+这是使用这个生命周期的一个常见 bug。为什么会发生这个 bug 呢？在开头有说到，在 React 16.4^ 的版本中 setState 和 forceUpdate 也会触发这个生命周期，所以内部 state 变化后，又会走 getDerivedStateFromProps 方法，并把 state 值更新为传入的 prop。
+
+```js
+Class ColorPicker extends React.Component {
+  state = {
+    color: '#000000',
+    prevPropColor: ''
+  }
+  static getDerivedStateFromProps (props, state) {
+    if (props.color !== state.prevPropColor) {
+      return {
+        color: props.color
+        prevPropColor: props.color
+      }
+    }
+    return null
+  }
+  ... // 选择颜色方法
+  render () {
+    .... // 显示颜色和选择颜色操作
+  }
+}
+```
+
+> 注意 getDerivedStateFromProps 前面要添加static保留字，声明为静态方法，否则会被react忽略掉。
+
+getDerivedStateFromProps 中的this指向为 `undefined`
+
+静态方法只能被构造函数调用，而不能被实例调用。
+
+getSnapshotBeforeUpdate
+
+getSnapshotBeforeUpdate() 被调用于render之后，可以读取但无法使用DOM的时候。它使您的组件可以在可能更改之前从DOM捕获一些信息（例如滚动位置）。此生命周期返回的任何值都将作为参数传递给componentDidUpdate（）。
+
+```js
+class ScrollingList extends React.Component {
+  constructor(props) {
+    super(props);
+    this.listRef = React.createRef();
+  }
+
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    // 我们是否要添加新的 items 到列表?
+    // 捕捉滚动位置，以便我们可以稍后调整滚动.
+    if (prevProps.list.length < this.props.list.length) {
+      const list = this.listRef.current;
+      return list.scrollHeight - list.scrollTop;
+    }
+    return null;
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    // 如果我们有snapshot值, 我们已经添加了 新的items.
+    // 调整滚动以至于这些新的items 不会将旧items推出视图。
+    // (这边的snapshot是 getSnapshotBeforeUpdate方法的返回值)
+    if (snapshot !== null) {
+      const list = this.listRef.current;
+      list.scrollTop = list.scrollHeight - snapshot;
+    }
+  }
+
+  render() {
+    return (
+      <div ref={this.listRef}>{/* ...contents... */}</div>
+    );
+  }
+}
+```
+
+
+
+
+
+
+
+
