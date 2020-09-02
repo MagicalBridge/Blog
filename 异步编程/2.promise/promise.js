@@ -6,21 +6,25 @@ class Promise {
   // 1、看这个属性能否在原型上使用
   // 2、看属性是否公用
   constructor(executor) {
-    this.state = PEDNDING // 默认是PEDNDING
+    this.status = PEDNDING // 默认是PEDNDING
     this.value = undefined; // 成功的值
     this.reason = undefined; // 失败的原型
+    this.onResolvedCallbacks = []; // 成功回调的数组
+    this.onRejectedCallbacks = []; // 失败的回调的数组
     // 成功函数 value 成功的原因
     let resolve = (value) => {
-      if (this.state === PEDNDING) {
+      if (this.status === PEDNDING) {
         this.value = value;
-        this.state = RESOLVED;
+        this.status = RESOLVED;
+        this.onResolvedCallbacks.forEach(fn => fn())
       }
     }
     // 失败函数 reason 失败的原因
     let reject = (reason) => {
-      if (this.state === PEDNDING) {
+      if (this.status === PEDNDING) {
         this.reason = reason;
-        this.state = REJECTED;
+        this.status = REJECTED;
+        this.onRejectedCallbacks.forEach(fn => fn())
       }
     }
     try {
@@ -30,8 +34,26 @@ class Promise {
       reject(e)
     }
   }
-  // TODO 这个then方法接收两个方法用于成功回调和失败回调。
-  then() {}
+  then(onfulfilled, onrejected) {
+    if (this.status === RESOLVED) {
+      onfulfilled(this.value);
+    }
+    if (this.status === REJECTED) {
+      onrejected(this.reason);
+    }
+    // 如果是中间状态的话
+    if (this.status === PEDNDING) {
+      // 如果是异步，就先订阅好
+      this.onResolvedCallbacks.push(() => {
+        // todo 这里可以做一些事情
+        onfulfilled();
+      })
+
+      this.onRejectedCallbacks.push(() => {
+        onrejected();
+      })
+    }
+  }
 }
 
 module.exports = Promise
