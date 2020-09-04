@@ -14,3 +14,6 @@ let promise = new Promise((resolve, reject) => { // executor 执行器
 })
 
 console.log(2);
+
+// 如果一个promise的then 方法中的函数（成功和失败）返回的结果是一个promise的话，会自动将这个
+// promise 执行 并且采用它的状态，如果成功会将成功的结果向外层的下一个then传递

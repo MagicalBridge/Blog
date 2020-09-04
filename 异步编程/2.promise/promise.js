@@ -35,24 +35,32 @@ class Promise {
     }
   }
   then(onfulfilled, onrejected) {
-    if (this.status === RESOLVED) {
-      onfulfilled(this.value);
-    }
-    if (this.status === REJECTED) {
-      onrejected(this.reason);
-    }
-    // 如果是中间状态的话
-    if (this.status === PEDNDING) {
-      // 如果是异步，就先订阅好
-      this.onResolvedCallbacks.push(() => {
-        // todo 这里可以做一些事情
-        onfulfilled();
-      })
+    // 这里相当于自己new自己 
+    let promise2 = new Promise((resolve, reject) => { // executor 立即执行
+      if (this.status === RESOLVED) {
+        // 在实际调用的时候会有这样一个返回值 我调用完then 方法之后，会返回另一个promise(这个真的是精髓)
+        let x = onfulfilled(this.value);
+        // x可能是普通值，也可能是promise
+        resolve(x)
+      }
+      if (this.status === REJECTED) {
+        onrejected(this.reason);
+      }
+      // 如果是中间状态的话
+      if (this.status === PEDNDING) {
+        // 如果是异步，就先订阅好
+        this.onResolvedCallbacks.push(() => {
+          onfulfilled();
+        })
 
-      this.onRejectedCallbacks.push(() => {
-        onrejected();
-      })
-    }
+        this.onRejectedCallbacks.push(() => {
+          onrejected();
+        })
+      }
+    })
+
+    // 链式调用每次都返回一个新的promise 
+    return promise2
   }
 }
 
