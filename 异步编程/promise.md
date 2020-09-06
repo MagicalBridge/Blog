@@ -1,3 +1,5 @@
+https://zhuanlan.zhihu.com/p/183801144
+
 ```js
 const PENDING = 'PENDING'
 const RESOVLED = 'RESOVLE'
@@ -21,7 +23,7 @@ class Promise {
         this.status = REJECTED
       }
     }
-    
+
     try {
       executor()
     }catch(e) {
