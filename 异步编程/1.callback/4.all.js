@@ -1,4 +1,9 @@
+// fs 文件读写功能,
+// 异步方法的特点是并不知道谁先执行完毕
+
 let fs = require('fs')
+let path = require('path')
+// console.log(path.join(__dirname));
 
 function after(times, cb) {
   let school = {};
@@ -15,10 +20,10 @@ let out = after(2, function (result) {
 })
 
 // 读取name
-fs.readFile('./name.txt', function (err, data) {
-  out('name', 'louis');
+fs.readFile(path.join(__dirname) + '/name.txt', function (err, data) {
+  out(name, data);
 })
 // 读取age
-fs.readFile('./age.txt', function (err, data) {
-  out('age', 10);
+fs.readFile(path.join(__dirname) + '/age.txt', function (err, data) {
+  out(age, data);
 })
