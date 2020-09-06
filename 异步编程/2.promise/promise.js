@@ -2,6 +2,11 @@ const PEDNDING = 'PEDNDING'
 const RESOLVED = 'RESOLVED'
 const REJECTED = 'REJECTED'
 
+// 统一处理promise
+const resolvePromise = (promise2, x, resolve, reject) {
+
+}
+
 class Promise {
   // 1、看这个属性能否在原型上使用
   // 2、看属性是否公用
@@ -40,8 +45,10 @@ class Promise {
       if (this.status === RESOLVED) {
         // 在实际调用的时候会有这样一个返回值 我调用完then 方法之后，会返回另一个promise(这个真的是精髓)
         let x = onfulfilled(this.value);
-        // x可能是普通值，也可能是promise
-        resolve(x)
+        // x可能是普通值，也可能是promise 
+        // 判断x的值 => promise2的状态
+        // 这里写一个公共的方法，这个方法用于解析x 和 promise2之间的关系
+        resolvePromise(promise2, x, resolve, reject);
       }
       if (this.status === REJECTED) {
         onrejected(this.reason);
