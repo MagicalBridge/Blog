@@ -90,6 +90,12 @@ class Promise {
     }
   }
   then(onfulfilled, onrejected) {
+    // onfulfilled onrejected 都是可选参数
+    onfulfilled = typeof onfulfilled === 'function' ? onfulfilled : data => data
+    onrejected = typeof onrejected === 'function' ? onfulfilled : err => {
+      throw err
+    }
+
     // 这里相当于自己new自己，通过梳理promise调用then 方法之后还可以不断的调用新的
     // promise， 
     let promise2 = new Promise((resolve, reject) => { // executor 立即执行
