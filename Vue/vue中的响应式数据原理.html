@@ -22,6 +22,7 @@
       for (let key in obj) {
         // 将原来的值保存着
         let value = obj[key];
+        // 每一个属性都应该有一个dep 监听每一个属性的变化
         let dep = [];
         Object.defineProperty(obj, key, {
           get() {
@@ -32,6 +33,7 @@
           },
           set(newValue) {
             value = newValue;
+            // 通知所有的watcher重新渲染
             dep.forEach(watcher => watcher());
           }
         })
@@ -44,7 +46,8 @@
     const watcher = (fn) => {
       // 先将fn赋值给active
       active = fn;
-      fn();
+      fn(); // 执行这个fn 就触发 get 方法 函数就会被收集进去
+      // 重置active为null的原因是如果在外部直接调用
       active = null;
     }
 
