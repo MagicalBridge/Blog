@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- vue-loader中就是使用的这个包 -->
+  <script src="node_modules/vue-template-compiler/browser.js"></script>
+
+  <script>
+    let { ast, render } = VueTemplateCompiler.compile(`<div>vue测试</div>`)
+    // 传递进去template标签。
+    // console.log(ast); // 打印出来的是一个对象 
+    // 从这个方法中还能得到 一个render方法。
+    console.log(render); // with(this){return _c('div',[_v("vue测试")])}
+
+    // 实现原理是 with +  new Function
+    console.log(new Function(render).toString());
+    // 
+  </script>
+</body>
+
+</html>
