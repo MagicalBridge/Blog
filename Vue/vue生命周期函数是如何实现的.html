@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 合并钩子方法
+    function mergeHook(parentVal, childVal) {
+      if (childVal) {
+        if (parentVal) {
+          return parentVal.concat(childVal)
+        } else {
+          return [childVal] // 将钩子函数包装成一个数组
+        }
+      } else {
+        return parentVal
+      }
+    }
+
+    // 合并两个属性
+    function mergeOptions(parent, child) {
+      let opts = {};
+      // 将父组件的钩子 和 子组件的钩子做合并
+      for (let key in child) {
+        opts[key] = mergeHook(parent[key], child[key]);
+      }
+      return opts;
+    };
+
+    function callHook(vm, hookName) {
+      vm.options[hookName].forEach(h => h());
+    };
+
+    // 定义构造函数
+    function Vue(options) { // 合并操作
+      // 内部将钩子函数转换成一个数组；
+      this.options = mergeOptions(this.constructor.options, options);
+
+      // 合适的时候
+      callHook(this, 'beforeCreate');
+      callHook(this, 'created')
+    }
+    Vue.options = {} // 默认的值 他会拿这个值和用户传递的值进行合并
+    // 生成实例
+    new Vue({
+      beforeCreate() {
+        console.log('before create ok');
+      }
+    })
+  </script>
+</body>
+
+</html>
