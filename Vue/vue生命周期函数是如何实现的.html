@@ -11,13 +11,13 @@
   <script>
     // 合并钩子方法
     function mergeHook(parentVal, childVal) {
-      if (childVal) {
-        if (parentVal) {
+      if (childVal) { // 儿子有值
+        if (parentVal) { // 让父亲的值和儿子的值做一个合并
           return parentVal.concat(childVal)
         } else {
-          return [childVal] // 将钩子函数包装成一个数组
+          return [childVal] // 将钩子函数包装成一个数组 
         }
-      } else {
+      } else { // 儿子没有值 以爸爸为准
         return parentVal
       }
     }
@@ -26,6 +26,7 @@
     function mergeOptions(parent, child) {
       let opts = {};
       // 将父组件的钩子 和 子组件的钩子做合并
+      // 这里面父亲传递的是undefined
       for (let key in child) {
         opts[key] = mergeHook(parent[key], child[key]);
       }
@@ -33,12 +34,13 @@
     };
 
     function callHook(vm, hookName) {
-      vm.options[hookName].forEach(h => h());
+      vm.options[hookName] && vm.options[hookName].forEach(h => h());
     };
 
     // 定义构造函数
     function Vue(options) { // 合并操作
       // 内部将钩子函数转换成一个数组；
+      // 核心方法就是这个mergeOptions 第一个参数是 默认的对象第二个参数是 用户传递的
       this.options = mergeOptions(this.constructor.options, options);
 
       // 合适的时候
@@ -50,6 +52,9 @@
     new Vue({
       beforeCreate() {
         console.log('before create ok');
+      },
+      created() {
+        console.log('create ok');
       }
     })
   </script>
