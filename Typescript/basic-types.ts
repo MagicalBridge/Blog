@@ -28,4 +28,3 @@ let arrayOfNumbers: number[] = [1, 2, 3, 4];
 
 // 元组
 let user: [string, number] = ['test', 123];
-
