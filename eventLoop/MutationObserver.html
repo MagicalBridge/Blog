@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+<script>
+  // 使用 MutationObserver 这个构造函数创建一个构造实例
+  // 接收一个回调函数
+  let mutationObserver = new MutationObserver((mutations, observer) => {
+    mutations.forEach((mutation) => {
+      // console.log(mutation);  // 打印的是
+    })
+    console.log(app.children.length); //  40 打印dom元素中的所有子元素
+    console.log(observer); // 这就是那个实例
+  });
+  // 向app 中插入20个标签
+  for (let i = 0; i < 20; i++) {
+    app.appendChild(document.createElement('p'));
+  };
+  // 使用实例监听变化
+  mutationObserver.observe(app, {
+    childList: true, // 子节点的变动（指新增，删除或者更改)
+    attributes: true, // 属性的变动
+    characterData: true, // 节点内容或节点文本的变动
+  })
+  // 再向页面中添加 20 个标签
+  for (let i = 0; i < 20; i++) {
+    app.appendChild(document.createElement('p'));
+  };
+</script>
+
+</html>
