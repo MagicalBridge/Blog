@@ -56,17 +56,16 @@
 
 ## leetCode  Algorithm:
 
-| # | Title | Solution | Difficulty |classification|
-|---| ----- | -------- | ---------- |--------------|
-|1|[Two Sum](https://leetcode-cn.com/problems/two-sum/description/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/1)|Easy|Array|
-|2|[Add Two Numbers](https://leetcode-cn.com/problems/add-two-numbers/description/)| [JavaScript](https://github.com/MagicalBridge/Blog/issues/3)|Medium|Linked List|
-|3|[Longest Substring Without Repeating Characters](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)| [java](https://github.com/MagicalBridge/Blog/issues/4)|Medium|String|
-|7|[reverse-integer](https://github.com/MagicalBridge/Blog/issues/24)| [JavaScript](https://github.com/MagicalBridge/Blog/issues/24)|easy|String|
-|11|[Container With Most Water](https://leetcode-cn.com/problems/container-with-most-water/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/11)|Medium|Array|
-|26|[Remove Duplicates from Sorted Array](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/submissions/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/25)|easy|Array|
-|27|[Remove Element](https://leetcode-cn.com/problems/remove-element/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/27)|easy|Array|
-|35|[Search Insert Position](https://leetcode-cn.com/problems/search-insert-position/submissions/)| [java,javaScript](https://github.com/MagicalBridge/Blog/issues/22)|easy|Array|
-|83|[](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/submissions/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/28)|easy|Linked List|
+| 编号 | 名称 | 解答 | 难度 |分类标签|
+|---| ----- | -------- | ---------- |--------------------------------------------|
+|1|[两数之和](https://leetcode-cn.com/problems/two-sum/description/) | [javaScript](https://github.com/MagicalBridge/Blog/issues/1) |简单|数组、hashMap|
+|2|[两数相加](https://leetcode-cn.com/problems/add-two-numbers/description/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/3)|中等|链表|
+|3|[无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/4)|中等|字符串|
+|7|[整数反转](https://github.com/MagicalBridge/Blog/issues/24)| [JavaScript](https://github.com/MagicalBridge/Blog/issues/24)|简单|字符串|
+|11|[盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/11)|中等|数组|
+|26|[删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/submissions/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/25)|简单|数组|
+|27|[移除元素](https://leetcode-cn.com/problems/remove-element/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/27)|简单|数组|
+|35|[搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/submissions/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/22)|简单|数组|
 
 
 
