@@ -21,9 +21,9 @@
 |1|[Vue中watch高级用法](https://github.com/MagicalBridge/Blog/issues/15)
 
 
-## [写作输出](https://github.com/MagicalBridge/Blog/tree/master/%E5%86%99%E4%BD%9C)
+## [写作输出](https://github.com/MagicalBridge/Blog/tree/master/%E5%86%99%E4%BD%9C)
 
-## [leetCode 算法题解](https://github.com/MagicalBridge/Blog/tree/master/leetCode)
+## [leetCode算法题解](https://github.com/MagicalBridge/Blog/tree/master/leetCode)
 
 
 
