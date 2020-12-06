@@ -8,7 +8,7 @@
 * [文章列表](https://github.com/MagicalBridge/Blog/tree/master/%E5%86%99%E4%BD%9C)
 
 ### JavaScript数据结构
-* [JavaScript数据结构]()
+* [JavaScript数据结构](https://github.com/MagicalBridge/Blog/tree/master/dataDtructure)
 
 ### leetCode算法题解
 * [leetCode算法题解列表](https://github.com/MagicalBridge/Blog/tree/master/leetCode)
