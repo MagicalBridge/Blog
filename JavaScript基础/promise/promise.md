@@ -126,6 +126,59 @@ try {
 * 4、已经拒绝的promise，后续可以通过 .catch 方法或者是 .then方法的第二个参数或是try catch 进行捕获。
 
 
+## promise有哪些优缺点
+
+* 优点:
+
+1）可以解决异步嵌套问题
+2）可以解决多个异步并发问题
+
+* 缺点:
+  1) promise是基于回调的
+  2) promise没有办法终止异步
+
+* 1）promise其实是一个规范，所有基于这个规范实现的promsie我们都认为是合法的promise
+* 2）首先promise是一个类, 这个类里面有三个状态, 等待态、成功态、失败态。
+* 3）promise这个类，接收一个函数，这个函数我们叫做executor（执行器），这个函数会立即执行。
+* 4) 这个executor函数接收两个函数作为参数，第一个参数是resolve，第二个参数是reject，resolve代表成功，reject代表失败。
+* 5) 每一个promise实例都有一个then方法。这个then方法也有参数，一个是onfullfiled, 一个是onrejected。当 resolve执行的时候，走then的成功回调，当执行reject执行的时候，走then的失败回调。
+```js
+let promise = new Promise((resolve, reject) => {
+  resolve('hello')
+}).then((data) => {
+  console.log(data); // hello
+}, (err) => {
+  console.log('err' + err);
+})
+```
+上面这段代码中执行了resolve函数，在then的成功回调中，接收到了resolve传递过来的数据，会在控制台打印hello。
+
+如果我们执行reject,则在then的失败回调中打印reject传递出来的信息。
+
+```js
+let promise = new Promise((resolve, reject) => {
+  reject('错误信息')
+}).then((data) => {
+  console.log(data);
+}, (err) => {
+  console.log('err' + err); // err错误信息
+})
+```
+* 6) 从等待态只要是到了 成功态或者失败态中的任何一个状态,都不能转换成另外一种状态了。
+```js
+let promise = new Promise((resolve, reject) => {
+  reject('错误信息')
+  resolve('hello')
+}).then((data) => {
+  console.log(data);
+}, (err) => {
+  console.log('err' + err); // err错误信息
+})
+```
+上述代码中,先执行了reject函数，然后再执行 resolve 最后输出的只有err,因为已经确定的状态，不会改变了。
+
+
+
 
 
 
