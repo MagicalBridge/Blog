@@ -164,7 +164,7 @@ let promise = new Promise((resolve, reject) => {
   console.log('err' + err); // err错误信息
 })
 ```
-* 6) 从等待态只要是到了 成功态或者失败态中的任何一个状态,都不能转换成另外一种状态了。
+* 6) 从等待态只要是到了`成功态`或者`失败态`中的任何一个状态,都不能转换成另外一种状态了。
 ```js
 let promise = new Promise((resolve, reject) => {
   reject('错误信息')
@@ -190,6 +190,8 @@ let promise = new Promise((resolve, reject) => {
 })
 ```
 如上面的代码所示，当我们抛出异常之后，并不会走成功的resolve了。
+
+
 
 
 
