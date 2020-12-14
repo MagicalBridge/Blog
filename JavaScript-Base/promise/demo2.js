@@ -1,5 +1,5 @@
 let promise = new Promise((resolve, reject) => {
-  reject('错误信息')
+  throw new Error('抛出异常');
   resolve('hello')
 }).then((data) => {
   console.log(data);

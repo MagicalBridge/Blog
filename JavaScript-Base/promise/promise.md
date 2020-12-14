@@ -177,6 +177,23 @@ let promise = new Promise((resolve, reject) => {
 ```
 上述代码中,先执行了reject函数，然后再执行 resolve 最后输出的只有err,因为已经确定的状态，不会改变了。
 
+* 7) 如果promise变成了失败态,就会走reject。（抛出错误也算失败）
+
+```js
+let promise = new Promise((resolve, reject) => {
+  throw new Error('抛出异常');
+  resolve('hello');
+}).then((data) => {
+  console.log(data);
+}, (err) => {
+  console.log('err' + err); // errError: 抛出异常
+})
+```
+如上面的代码所示，当我们抛出异常之后，并不会走成功的resolve了。
+
+
+
+
 
 
 
