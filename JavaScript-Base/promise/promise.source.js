@@ -1,5 +1,16 @@
 class CustomPromise {
+  // 这个类里面是需要接受一个回调函数的
+  constructor(handleFunc) {
+    this.state = 'pending';
+    this.value = undefined;
 
+    this.fulfilledList = [];
+    handleFunc(this.triggerResolve.bind(this));
+  }
+  
+  triggerResolve(val) {
+
+  }
 }
 
 
