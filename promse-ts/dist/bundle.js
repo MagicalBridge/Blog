@@ -1,5 +1,9 @@
 'use strict';
 
+// promsie 里面最重要的还是链式调用 
+// promsie 在调取then方法之后，这个then方法会返回一个新的promise
+// 这个新的promise也拥有then方法。
+
 const PENDING = 'PENDING'; // 等待态常量
 const FULFILLED = 'FULFILLED';  // 成功态常量
 const REJECTED = 'REJECTED'; // 失败态常量
@@ -19,10 +23,6 @@ class Promise {
       if (this.status === PENDING) {
         this.status = FULFILLED;
         this.value = value;
-        // promise.then 方法是先注册的,每调用一下then方法
-        // 传递两个函数 成功函数和失败函数，且可以不断的then下去
-        // 遇到异步的场景，resolve 延时触发，这个时候需要数组保存
-        // 提前放进数组中然后使用循环依次执行
         this.onFulfilledCallback.forEach(fn => fn());
       }
     };
@@ -31,8 +31,6 @@ class Promise {
       if (this.status === PENDING) {
         this.status = REJECTED;
         this.reason = reason;
-        // 失败的时候也是一样，提前收集好所有失败处理函数，在执行reject的时候
-        // 统一依次执行这些所有的失败函数。
         this.onRejectedCallback.forEach(fn => fn());
       }
     };

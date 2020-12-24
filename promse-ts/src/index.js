@@ -1,3 +1,7 @@
+// promsie 里面最重要的还是链式调用 
+// promsie 在调取then方法之后，这个then方法会返回一个新的promise
+// 这个新的promise也拥有then方法。
+
 const PENDING = 'PENDING' // 等待态常量
 const FULFILLED = 'FULFILLED'  // 成功态常量
 const REJECTED = 'REJECTED' // 失败态常量
