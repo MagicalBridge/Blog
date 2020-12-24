@@ -1,8 +1,6 @@
-'use strict';
-
-const PENDING = 'PENDING'; // 等待态常量
-const FULFILLED = 'FULFILLED';  // 成功态常量
-const REJECTED = 'REJECTED'; // 失败态常量
+const PENDING = 'PENDING' // 等待态常量
+const FULFILLED = 'FULFILLED'  // 成功态常量
+const REJECTED = 'REJECTED' // 失败态常量
 
 class Promise {
   constructor(executor) {
@@ -19,27 +17,21 @@ class Promise {
       if (this.status === PENDING) {
         this.status = FULFILLED;
         this.value = value;
-        // promise.then 方法是先注册的,每调用一下then方法
-        // 传递两个函数 成功函数和失败函数，且可以不断的then下去
-        // 遇到异步的场景，resolve 延时触发，这个时候需要数组保存
-        // 提前放进数组中然后使用循环依次执行
         this.onFulfilledCallback.forEach(fn => fn());
       }
-    };
+    }
 
     const reject = (reason) => {
       if (this.status === PENDING) {
         this.status = REJECTED;
         this.reason = reason;
-        // 失败的时候也是一样，提前收集好所有失败处理函数，在执行reject的时候
-        // 统一依次执行这些所有的失败函数。
         this.onRejectedCallback.forEach(fn => fn());
       }
-    };
+    }
     try {
-      executor(resolve, reject);
+      executor(resolve, reject)
     } catch (error) {
-      reject(error);
+      reject(error)
     }
   }
   then(onFulfilled, onRejected) {
@@ -53,14 +45,14 @@ class Promise {
 
     if (this.status === PENDING) {
       this.onFulfilledCallback.push(() => { // 切片编程
-        onFulfilled(this.value);
-      });
+        onFulfilled(this.value)
+      })
 
       this.onRejectedCallback.push(() => {
-        onRejected(this.reason);
-      });
+        onRejected(this.reason)
+      })
     }
   }
 }
 
-module.exports = Promise;
+export default Promise;
