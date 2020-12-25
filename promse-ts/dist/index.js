@@ -1,13 +1,13 @@
-// const Promise = require('./bundle');
-let promise = new Promise((resolve, reject) => {
-  resolve('ok')
+const Promise = require('./bundle');
+let promise2 = new Promise((resolve, reject) => {
+  reject('ok')
 }).then((data) => {
-  console.log(data);
+  throw new Error('1111')
 }, (err) => {
-  console.log(err);
+  throw new Error('2222')
 })
 
-promise.then((data) => {
+promise2.then((data) => {
   console.log('success ' + data);
 }, (error) => {
   console.log('error ' + error);

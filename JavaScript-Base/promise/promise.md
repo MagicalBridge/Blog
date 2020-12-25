@@ -340,7 +340,21 @@ promise中会返回三种
   2、返回一个普通值
   3、返回了一个新的 promise 
 
-根据规范中的描述，每调用一次then方法，就会返回一个新的promise这个promise
+根据规范中的描述，每调用一次then方法，就会返回一个新的promise这个promise 我们暂且叫他promise2,这个promsie2 中也是嫩够接收到上一次promsie的executor方法, 如果executor中执行了resolve那么 会走自己then方法的成功回调，在这个成功回调中同样会返回一个值,如果这个值是普通值，会传递给promise2的then方法的成功回调。
+
+
+```js
+
+```
+
+* 11) 在第一个promise的then方法中，无论在成功回调还是失败回调，都有可能抛出错误。
+只要是抛出异常这种情况，直接走 promise2的reject方法。
+
+
+
+
+
+
 
 
 
