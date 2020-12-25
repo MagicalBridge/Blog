@@ -333,6 +333,15 @@ class Promise {
 export default Promise;
 ```
 
+* 10) promise 中比较难以理解的就是链式调用了
+
+promise中会返回三种
+  1、出错了
+  2、返回一个普通值
+  3、返回了一个新的 promise 
+
+根据规范中的描述，每调用一次then方法，就会返回一个新的promise这个promise
+
 
 
 
