@@ -10,12 +10,6 @@ const PENDING = 'PENDING' // 等待态常量
 const FULFILLED = 'FULFILLED'  // 成功态常量
 const REJECTED = 'REJECTED' // 失败态常量
 
-// 因为在执行onfilfilled的时候 返回的x不一定是 普通值 还有可能是一个promsie
-// 所以这里面单独抽离出来这个函数进行处理。
-function resolvePromise(promise2, x, resolve, reject) {
-
-}
-
 class Promise {
   constructor(executor) {
     // 在构造函数中创建这个状态, 每new出来一个 promise 实例 都拥有这些方法
@@ -54,58 +48,46 @@ class Promise {
     // 立即执行函数中 接收两个 函数
     let promsie2 = new Promise((resolve, reject) => {
       if (this.status === FULFILLED) {
-        setTimeout(() => {
-          try {
-            // 在then方法执行完之后 会有一个返回值
-            let x = onFulfilled(this.value);
-            // 这个resolve 是promise2的resolve 这样resolve出去之后
-            // 在promsie2的then方法中就能拿到这个返回的结果值。
-            // resolve(x);
-            resolvePromise(promsie2, x, resolve, reject);
-          } catch (e) {
-            reject(e);
-          }
-        }, 0);
+        try {
+          // 在then方法执行完之后 会有一个返回值
+          let x = onFulfilled(this.value);
+          // 这个resolve 是promise2的resolve 这样resolve出去之后
+          // 在promsie2的then方法中就能拿到这个返回的结果值。
+          resolve(x);
+        } catch (e) {
+          reject(e);
+        }
       }
 
       if (this.status === REJECTED) {
-        setTimeout(() => {
-          try {
-            let x = onRejected(this.reason);
-            // 在第一个promsie 中执行reject的时候
-            // 会走到这个失败会回调 当这个回调返回普通值的时候
-            // 依然会传递给下一个的成功值
-            // resolve(x);
-            resolvePromise(promsie2, x, resolve, reject);
-          } catch (e) {
-            reject(e)
-          }
-        }, 0);
+        try {
+          let x = onRejected(this.reason);
+          // 在第一个promsie 中执行reject的时候
+          // 会走到这个失败会回调 当这个回调返回普通值的时候
+          // 依然会传递给下一个的成功值
+          resolve(x);
+        } catch (e) {
+          reject(e)
+        }
       }
 
       if (this.status === PENDING) {
         this.onFulfilledCallback.push(() => { // 切片编程
-          setTimeout(() => {
-            try {
-              let x = onFulfilled(this.value)
-              // resolve(x);
-              resolvePromise(promsie2, x, resolve, reject);
-            } catch (e) {
-              reject(e)
-            }
-          }, 0);
+          try {
+            let x = onFulfilled(this.value)
+            resolve(x);
+          } catch (e) {
+            reject(e)
+          }
         })
 
         this.onRejectedCallback.push(() => {
-          setTimeout(() => {
-            try {
-              let x = onRejected(this.reason)
-              // resolve(x);
-              resolvePromise(promsie2, x, resolve, reject);
-            } catch (e) {
-              reject(e)
-            }
-          }, 0);
+          try {
+            let x = onRejected(this.reason)
+            resolve(x);
+          } catch (e) {
+            reject(e)
+          }
         })
       }
     })
