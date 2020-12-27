@@ -9,11 +9,14 @@
 const PENDING = 'PENDING' // 等待态常量
 const FULFILLED = 'FULFILLED'  // 成功态常量
 const REJECTED = 'REJECTED' // 失败态常量
-
 // 因为在执行onfilfilled的时候 返回的x不一定是 普通值 还有可能是一个promsie
 // 所以这里面单独抽离出来这个函数进行处理。
 function resolvePromise(promise2, x, resolve, reject) {
-
+  // 判断x的值决定promie2的关系 来判断x 可能是别人的promsie
+  // 根据规范来说，这个x不能是promise2自己
+  if (x === promise2) {
+    return reject(new TypeError('出错了'))
+  }
 }
 
 class Promise {
