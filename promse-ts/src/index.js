@@ -13,9 +13,48 @@ const REJECTED = 'REJECTED' // 失败态常量
 // 所以这里面单独抽离出来这个函数进行处理。
 function resolvePromise(promise2, x, resolve, reject) {
   // 判断x的值决定promie2的关系 来判断x 可能是别人的promsie
-  // 根据规范来说，这个x不能是promise2自己
+  // 根据规范来说，这个x不能是promise2自己 这样就相当于自己等待自己的结果
   if (x === promise2) {
     return reject(new TypeError('出错了'))
+  }
+  // x 必须是对象 并且 x 不是null x 可能是个函数呢（这是promiseA+ 规范中的内容）
+  if ((typeof x === 'object' && x !== null) && typeof x === 'function') {
+    // 这里为什么要取then方法呢，很显然根据规范来说 拥有then方法的才能称之为promise
+    // 但是在取then方法的时候可能会抛出异常
+
+    // 添加一个标识 调用标识
+    let called = false; // 表示既没有调用过成功和失败
+
+    try {
+      let then = x.then;
+      // 如果then是一个函数
+      if (typeof then === 'function') {
+        // 执行这个then 并绑定this指向 x 
+        then.call(x, y => {
+          // 这个部分就涉及到递归解析的部分了 反复琢磨和理解
+          if (called) {
+            return
+          }
+          called = true;
+          resolvePromise(promsie2, y, resolve, reject);
+        }, r => {
+          if (called) {
+            return
+          }
+          called = true;
+          // 失败了不需要递归解析了
+          reject(r)
+        })
+      }
+    } catch (e) {
+      if (called) {
+        return
+      }
+      called = true;
+      reject(e);
+    }
+  } else { // 如果不是，那一定是一个普通值 promise 必须要有then方法
+    resolve(x);
   }
 }
 
