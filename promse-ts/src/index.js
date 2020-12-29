@@ -148,6 +148,10 @@ class Promise {
     })
     return promsie2;
   }
+
+  catch(errFn) {
+    return this.then(null, errFn);
+  }
 }
 
 // 在promsie 上面添加一个方法
