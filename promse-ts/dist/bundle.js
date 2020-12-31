@@ -36,6 +36,11 @@ class Promsie {
       reject(e);
     }
   }
+  // promise 拥有一个then方法 这个then方法接收两个函数
+  // onFulfilled onRejected
+  then(onfulfilled) {
+
+  }
 }
 
 module.exports = Promsie;
