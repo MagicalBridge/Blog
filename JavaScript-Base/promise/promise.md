@@ -335,16 +335,29 @@ export default Promise;
 
 * 10) promise 中比较难以理解的就是链式调用了
 
-promise中会返回三种
-  1、出错了
-  2、返回一个普通值
-  3、返回了一个新的 promise 
+1、promsie的then方法，无论成功还是失败都可以返回结果，换句话说 then成功回调可以有返回值，then的失败回调也可以有返回值。
+2、这个结果我们一般分为三种类型
+  1、出错了 只要是出错了就走到错误里面 
+  2、返回一个普通值 所谓的普通值，指的是不是promsie的值。就会作为下一次then的成功结果。
+  3、返回了一个新的 promise **会采用返回的 promsie 的状态** 
 
 根据规范中的描述，每调用一次then方法，就会返回一个新的promise这个promise 我们暂且叫他promise2,这个promsie2 中也是嫩够接收到上一次promsie的executor方法, 如果executor中执行了resolve那么 会走自己then方法的成功回调，在这个成功回调中同样会返回一个值,如果这个值是普通值，会传递给promise2的then方法的成功回调。
 
-
 ```js
+let promise = new Promise((resolve,reject) => {
+  resolve('ok')
+}).then((data) => {
+  console.log(data)
+},(err) => {
+  console.log('err' + err)
+})
 
+//生成的promise实例
+promise.then((data)=>{
+  console.log(data)
+},err => {
+  console.log(err)
+})
 ```
 
 * 11) 在第一个promise的then方法中，无论在成功回调还是失败回调，都有可能抛出错误。
