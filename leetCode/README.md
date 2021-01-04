@@ -11,5 +11,6 @@
 |26|[删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/submissions/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/25)|简单|数组、双指针|
 |27|[移除元素](https://leetcode-cn.com/problems/remove-element/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/27)|简单|数组|
 |35|[搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/submissions/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/22)|简单|数组|
+|80|[删除排序数组中的重复项 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/32)|中等|数组|
 |206|[翻转链表](https://leetcode-cn.com/problems/reverse-linked-list/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/30)|简单|链表|
 |415|[字符串相加](https://leetcode-cn.com/problems/add-strings/solution/zi-fu-chuan-xiang-jia-by-leetcode-solution/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/31)|简单|字符串|
