@@ -345,7 +345,11 @@ export default Promise;
 第二种情况是，方法中有一个throw new Error() 这种抛出错误的场景。
 
 
-根据规范中的描述，每调用一次then方法，就会返回一个新的promise这个promise 我们暂且叫他promise2,这个promsie2 中也是嫩够接收到上一次promsie的executor方法, 如果executor中执行了resolve那么 会走自己then方法的成功回调，在这个成功回调中同样会返回一个值,如果这个值是普通值，会传递给promise2的then方法的成功回调。
+根据规范中的描述:
+  * 1、每调用一次then方法，就会返回一个新的promise。为什么不能像jq那样返回this呢，因为当第一个promise失败之后，状态已经变了
+  上文说道，抛出异常之后走第一个promsie，之后还可以走入第二个promsie的成功。规范:2.2.7
+
+  * 2、这个promise 我们暂且叫他promise2,这个promsie2 中也是嫩够接收到上一次promsie的executor方法, 如果executor中执行了resolve那么 会走自己then方法的成功回调，在这个成功回调中同样会返回一个值,如果这个值是普通值，会传递给promise2的then方法的成功回调。为了实现这个效果，
 
 ```js
 let promise = new Promise((resolve,reject) => {
@@ -365,13 +369,105 @@ promise.then((data)=>{
 ```
 
 * 11) 在第一个promise的then方法中，无论在成功回调还是失败回调，都有可能抛出错误。
-只要是抛出异常这种情况，直接走 promise2的reject方法。
+只要是抛出异常这种情况，直接走 promise2的reject方法。所以这里需要使用 try catch 来同步捕获异常
+```js
+const PENDING = 'PENDING'; // 中间态
+const ONFULFILLED = 'ONFULFILLED'; // 成功
+const ONREJECTED = 'ONREJECTED' // 失败
 
+class Promise {
+  constructor(executor) {
+    this.state = PENDING;
+    this.value = undefined;
+    this.reason = undefined;
+    this.onFulfilledCallback = []; // 成功回调的数组
+    this.onRejectedCallback = []; // 失败回调的数组 
+
+    // 成功状态执行的函数
+    let resolve = (value) => {
+      if (this.state === PENDING) {
+        this.value = value;
+        this.state = ONFULFILLED;
+        this.onFulfilledCallback.forEach(fn => fn());
+      }
+    }
+    // 失败状态执行的函数
+    let reject = (reason) => {
+      if (this.state === PENDING) {
+        this.reason = reason;
+        this.state = ONREJECTED;
+        this.onRejectedCallback.forEach(fn => fn());
+      }
+    }
+    // 立即执行函数
+    try {
+      executor(resolve, reject);
+    } catch (e) {
+      reject(e)
+    }
+  }
+  // then方法接收两个函数onFulfilled 和 另一个函数
+  then(onFulfilled, onRejected) {
+    // 根据规范2.2.7中的表述可以知道,每调用一个then方法都会返回一个新的promsie
+    // 这样我们就能不停的进行then的链式调用
+    // 如何调用promsie的成功回调呢？
+    let promise2 = new Promise((resolve, reject) => {
+      if (this.state === ONFULFILLED) {
+        try {
+          // 用then的返回值 作为下一次的 then的 成功结果。
+          let x = onFulfilled(this.value);
+          resolve(x)
+        } catch (e) {
+          reject(e)
+        }
+      }
+
+      if (this.state === ONREJECTED) {
+        try {
+          let x = onRejected(this.reason);
+          resolve(x)
+        } catch (e) {
+          reject(e)
+        }
+      }
+      // 如果是处于中间状态; 则将函数收集起来
+      if (this.state === PENDING) {
+        this.onFulfilledCallback.push(() => {
+          try {
+            let x = onFulfilled(this.value);
+            resolve(x)
+          } catch (e) {
+            reject(e)
+          }
+        })
+
+        this.onRejectedCallback.push(() => {
+          try {
+            let x = onRejected(this.reason);
+            resolve(x)
+          } catch (e) {
+            reject(e)
+          }
+        })
+      }
+    })
+
+    // 将这个promsie2返回出去
+    return promise2;
+  }
+}
+
+module.exports = Promise;
+```
 
 * 12）onfulfilled 和 onrejected 还有可能返回一个promsie
 
-对于是promsie的情况我们需要新添加一个 resolvePromsie函数进行处理，并且规范中海说了
-onfulfilled 和 onrejected 必须是异步的。所以还需要抽出来一个定时器。包裹着这段代码。
+参见规范 2.2.7.1 
+
+这个函数传递4个参数，规范中传递的是两个参数, 这里我们不妨将 promsie2的
+resolve 和 reject 方法也传递给它,  主要的目的是 判断x 是不是一个普通的值
+
+如果 x 是一个普通值，直接调用 promsie2的resolve方法，如果是一个promsie就要采用它的状态
 
 ```js
 const PENDING = 'PENDING' // 等待态常量
@@ -468,6 +564,17 @@ class Promise {
 
 export default Promise;
 ```
+
+* 13）在规范中的 2.2.4 中说了一个事情, onFulfilled 和 onRejected 不能被调用在当前的执行上下文栈中
+
+对于是promsie的情况我们需要新添加一个resolvePromsie函数进行处理，并且规范中说了
+onfulfilled 和 onrejected 必须是异步的。所以还需要抽出来一个定时器。包裹着这段代码。
+
+如何让这个 onFulfilled 和 onRejected 异步执行呢？这里使用一个 定时器去解决。
+
+
+
+
 
 
 
