@@ -1,11 +1,3 @@
-// promsie 里面最重要的还是链式调用 
-// promsie 在调取then方法之后，这个then方法会返回一个新的promise
-// 这个新的promise也拥有then方法。
-// 理解then方法 无论成功还是失败 都可以返回结果
-// 1、出错了  
-// 2、返回一个普通值 所谓的普通值 指的是不是promise。
-// 3、是promsie的情况  会采用promsie解析后的结果传递给下一个人
-
 const PENDING = 'PENDING' // 等待态常量
 const FULFILLED = 'FULFILLED'  // 成功态常量
 const REJECTED = 'REJECTED' // 失败态常量
@@ -148,7 +140,7 @@ class Promise {
     })
     return promsie2;
   }
-
+  // catch 方法实现其实思路非常清晰, 本质上就是一个then方法,只是实现的时候不传递，成功回调
   catch(errFn) {
     return this.then(null, errFn);
   }

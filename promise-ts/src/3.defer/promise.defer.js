@@ -1,8 +1,8 @@
 // promise 最核心的点是解决了异步并发问题 第二个是解决地域回调问题
 const fs = require('fs');
 const path = require('path');
-
-// 在promsie 上面添加一个方法 这个方法是个延迟对象 
+let Promise = require('../index'); // 引用自己的promsie
+// 在promsie 上面添加一个方法 这个方法是个延迟对象
 Promise.defer = function () {
   let dfd = {};
   dfd.promise = new Promise((resolve, reject) => {
@@ -21,6 +21,7 @@ function read(url) {
     }
     dfd.resolve(data)
   })
+  // 返回的是一个promsie实例
   return dfd.promise
 }
 
