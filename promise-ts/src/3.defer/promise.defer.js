@@ -24,8 +24,8 @@ function read(url) {
   return dfd.promise
 }
 
-read('../../age.txt').then((data) => {
- return read('../../'+ data);
-}).then((data)=>{
+read('../../name.txt').then((data) => {
+  return read('../../' + data);
+}).then((data) => {
   console.log(data);
 })
