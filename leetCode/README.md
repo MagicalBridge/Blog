@@ -14,6 +14,7 @@
 |41|[缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/34)|困难|数组、哈希表|
 |80|[删除排序数组中的重复项 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/32)|中等|数组、双指针|
 |134|[加油站](https://leetcode-cn.com/problems/gas-station/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/35)|中等|数组、贪心算法|
+|169|[多数元素](https://leetcode-cn.com/problems/majority-element/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/36)|中等|数组、哈希表|
 |189|[旋转数组](https://leetcode-cn.com/problems/rotate-array/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/33)|中等|数组|
 |206|[翻转链表](https://leetcode-cn.com/problems/reverse-linked-list/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/30)|简单|链表|
 |415|[字符串相加](https://leetcode-cn.com/problems/add-strings/solution/zi-fu-chuan-xiang-jia-by-leetcode-solution/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/31)|简单|字符串|
