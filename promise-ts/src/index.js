@@ -144,6 +144,17 @@ class Promise {
   catch(errFn) {
     return this.then(null, errFn);
   }
+  static resolve(val) {
+    return new Promise((resolve, reject) => {
+      resolve(val)
+    })
+  }
+
+  static reject(reason) {
+    return new Promise((resolve, reject) => {
+      reject(reason)
+    })
+  }
 }
 
 // 在promsie 上面添加一个方法
