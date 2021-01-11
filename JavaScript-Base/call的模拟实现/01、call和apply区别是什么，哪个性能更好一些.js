@@ -25,10 +25,26 @@ fn.call(obj, ...arr);
  * 使用console.time 可以测试出一段程序的运行时间
  */
 console.time('a');
-for(let i = 0;i < 1000000;i++) {
+for (let i = 0; i < 1000000; i++) {
 
 }
-console.timeEnd('a')
+console.timeEnd('a');
+
+// 模拟实现call
+Function.prototype.call = function (context) {
+  var context = context || window;
+  context.fn = this;
+
+  var args = [];
+  for (let i = 1; len = arguments.length, i < len; i++) {
+    args.push('arguments[' + i + ']');
+  }
+
+  var result = eval('context.fn(' + args + ')')
+  delete context.fn;
+
+  return result;
+}
 
 
 
