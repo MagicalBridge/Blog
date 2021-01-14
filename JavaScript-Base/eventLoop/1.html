@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
-  
+  <script>
+    // document.body.style.background = 'red';
+    // console.log(1);
+    // Promise.resolve().then(() => {
+    //   console.log(2);
+    //   document.body.style.background = 'yellow';
+    // })
+    // console.log(3);
+    // 页面会从红色变为黄色吗？
+    // 打印的顺序是 123吗
+    // 上述两种情况都不会发生 主要是事件循环中 先执行主线程的代码 再执行 微任务 然后 GUI渲染
+    // 然后取出 宏任务中的一个开始执行 不断的循环这个过程
+
+    // 如果将上述的微任务换成定时器 
+    document.body.style.background = 'red';
+    console.log(1);
+    setTimeout(() => {
+      console.log(2);
+      document.body.style.background = 'yellow';
+    }, 0);
+    console.log(3);
+  </script>
 </body>
+
 </html>
