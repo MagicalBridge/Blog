@@ -25,4 +25,5 @@
 |229|[求众数II](https://leetcode-cn.com/problems/majority-element-ii/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/37)|中等|数组、哈希表|
 |243|[最短单词距离](https://leetcode-cn.com/problems/shortest-word-distance/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/38)|中等|数组|
 |274|[最短单词距离](https://leetcode-cn.com/problems/h-index/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/39)|中等|数组|
+|287|[寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/45)|中等|数组、二分法、哈希表|
 |415|[字符串相加](https://leetcode-cn.com/problems/add-strings/solution/zi-fu-chuan-xiang-jia-by-leetcode-solution/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/31)|简单|字符串|
