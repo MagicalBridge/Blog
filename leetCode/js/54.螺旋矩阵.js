@@ -6,7 +6,7 @@
 var spiralOrder = function (matrix) {
   // 创建一个空的结果数组
   let res = [];
-  if (matrix.length === 0) {
+  if (matrix.length === 0) {         
     return res;
   }
   // 将矩阵坐标标出来
