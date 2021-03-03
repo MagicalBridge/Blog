@@ -12,6 +12,11 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "execa": "^5.0.0"
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "execa": "^5.0.0",
+    "rollup": "^2.40.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.2.2"
   }
 }
