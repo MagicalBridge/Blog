@@ -56,6 +56,69 @@ Object [global] {
 }
 ```
 
+## 5个虽然不是全局但是可以直接访问的属性
+- __dirname __filename  require module exports 
+
+## process 属性中常用的
+
+- 所谓的工作目录指的是在哪一层路径中执行的命令，那么这个工作目录就是哪。
+
+- cwd 运行时候产生的一个路径, 指向在哪里执行。
+```js
+console.log(process.cwd())
+```
+- chdir 可以改变 目录
+```js
+console.log(process.chdir("../../../"))
+```
+- dirname 指代的是当前文件所在的目录 这个目录是固定不变的，是死的。
+
+- env 会默认读取全局的 可以使用cross-env 跨端存储变量，在代码中配置。
+
+- argv 用户执行时候传递的参数。
+```js
+console.log(process.argv)  // node 1.js --port 3000 --coonfig webpack.config.js
+```
+argv[0]; // node的可执行文件
+argv[1]; // node执行的文件是谁
+...other  就是用户传递的参数  => 进行参数传递
+
+```js
+let program = {};
+process.argv.slice(2).forEach((item, index, array) => {
+  // console.log(item);
+  if (item.startsWith('--')) {
+    program[item.slice(2)] = array[index + 1]
+  }
+});
+// 执行这个命令 node 1.js --port 3000 --coonfig webpack.config.js
+// { port: '3000', config: 'webpack.config.js' }
+console.log(program); 
+```
+
+## 有一个commander工具可以可以进行非常方便的配置。
+```js
+const program = require('commander');
+// 脚手架 工程化工具 解析用户的各种参数
+program.option('-p, --port <v>', 'set user port')
+program.option('-c, --config <v>', 'set user config file')
+program.parse(process.argv)
+
+console.log(process.argv);
+[
+  '/Users/louis/.nvm/versions/node/v12.18.3/bin/node',
+  '/Users/louis/Documents/dailyWork/myBlog/node/node-base/1.js',
+  '--port',
+  '3000',
+  '--config',
+  'webpack.config.js'
+]
+```
+
+
+  
+
+
 
 
 
