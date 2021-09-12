@@ -1,7 +1,0 @@
-const shared = {
-
-}
-
-export {
-  shared
-}
