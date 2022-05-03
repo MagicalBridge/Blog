@@ -13,11 +13,10 @@
 ## 专栏
 * [掘金](https://juejin.cn/user/3509296845554909)
 
-
 ## leetCode算法题解:
-| # | Title | Solution |
-| --- | ----- | -------- |
-|1|[两数之和](https://leetcode-cn.com/problems/two-sum/description/) | [javaScript](https://github.com/MagicalBridge/Blog/issues/1) |简单|数组、hashMap|
+| # | Title | Solution | Difficulty | Label|
+| --- | ----- | -------- |-------- | ------ |
+|1|[两数之和](https://leetcode-cn.com/problems/two-sum/description/) | [javaScript](https://github.com/MagicalBridge/Blog/issues/1) |简单|数组、Map|
 |2|[两数相加](https://leetcode-cn.com/problems/add-two-numbers/description/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/3)|中等|链表|
 |3|[无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/4)|中等|字符串|
 |7|[整数反转](https://github.com/MagicalBridge/Blog/issues/24)| [javaScript](https://github.com/MagicalBridge/Blog/issues/24)|简单|字符串|
