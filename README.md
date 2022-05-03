@@ -4,11 +4,11 @@
 2022年劳动节整理目录
 
 ## 公众号
-|微信（本人）|公众号|
-|:----:|:----:|
-|<img src="./public-repository/images/weichat.png" width="120">|<img src="./public-repository/images/weipublic.jpeg" width="120">|
-|褚鹏飞|一些生活的思考|
-|进褚鹏飞的读者群|文章同步更新|
+|微信（本人）|公众号|技术博客|
+|:----:|:----:|:----:|
+|<img src="./public-repository/images/weichat.png" width="120">|<img src="./public-repository/images/weipublic.jpeg" width="120">|<img src="./public-repository/images/blog.png" width="120">|
+|褚鹏飞|一些生活的思考|vuepress|
+|进褚鹏飞的读者群|不定时更新|文章同步更新|
 
 ## 专栏
 * [掘金](https://juejin.cn/user/3509296845554909)
