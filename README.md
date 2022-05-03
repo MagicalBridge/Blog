@@ -7,14 +7,14 @@
 |微信（本人）|公众号|技术博客|
 |:----:|:----:|:----:|
 |<img src="./public-repository/images/weichat.png" width="120">|<img src="./public-repository/images/weipublic.jpeg" width="120">|<img src="./public-repository/images/blog.png" width="120">|
-|褚鹏飞|一些生活的思考|vuepress|
+|褚鹏飞|一些生活的思考|[Github.io](https://magicalbridge.github.io/)|
 |进褚鹏飞的读者群|不定时更新|文章同步更新|
 
 ## 专栏
 * [掘金](https://juejin.cn/user/3509296845554909)
 
 
-## leetCode 算法题解:
+## leetCode算法题解:
 | # | Title | Solution |
 | --- | ----- | -------- |
 |1|[两数之和](https://leetcode-cn.com/problems/two-sum/description/) | [javaScript](https://github.com/MagicalBridge/Blog/issues/1) |简单|数组、hashMap|
