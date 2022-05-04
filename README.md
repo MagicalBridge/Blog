@@ -13,13 +13,14 @@
 ## 专栏
 * [掘金](https://juejin.cn/user/3509296845554909)
 
+
 ## leetCode算法题解:
 | # | Title | Solution | Difficulty | Label|
 | --- | ----- | -------- |-------- | ------ |
-|1|[两数之和](https://leetcode-cn.com/problems/two-sum/description/) | [javaScript](https://github.com/MagicalBridge/Blog/issues/1) |简单|数组、Map|
-|2|[两数相加](https://leetcode-cn.com/problems/add-two-numbers/description/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/3)|中等|链表|
-|3|[无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/4)|中等|字符串|
-|5|[最长回文串](https://leetcode.cn/problems/longest-palindromic-substring/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/55)|中等|字符串|
+|1|[两数之和](https://github.com/MagicalBridge/Blog/issues/1) | 52.5% |简单| 数组、Map|
+|2|[两数相加](https://github.com/MagicalBridge/Blog/issues/3)| 41.7% |中等|链表|
+|3|[无重复字符的最长子串](https://github.com/MagicalBridge/Blog/issues/4)| 38.7% |中等|字符串|
+|5|[最长回文串](https://github.com/MagicalBridge/Blog/issues/55)| 36.6% |中等|字符串|
 |7|[整数反转](https://github.com/MagicalBridge/Blog/issues/24)| [javaScript](https://github.com/MagicalBridge/Blog/issues/24)|简单|字符串|
 |11|[盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/11)|中等|数组|
 |26|[删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/submissions/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/25)|简单|数组、双指针|
