@@ -26,9 +26,9 @@
 |11|[盛最多水的容器](https://github.com/MagicalBridge/Blog/issues/11)|61.4% |中等|数组|
 |26|[删除排序数组中的重复项](https://github.com/MagicalBridge/Blog/issues/25)|54.0%|简单|数组、双指针|
 |27|[移除元素](https://github.com/MagicalBridge/Blog/issues/27)|59.4%|简单|数组、双指针|
-|35|[搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/submissions/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/22)|简单|数组|
-|41|[缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/34)|困难|数组、哈希表|
-|42|[接雨水](https://leetcode-cn.com/problems/trapping-rain-water/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/44)|困难|数组、双指针|
+|35|[搜索插入位置](https://github.com/MagicalBridge/Blog/issues/22)| 45.3% |简单|数组|
+|41|[缺失的第一个正数](https://github.com/MagicalBridge/Blog/issues/34)| 42.6% |困难|数组、哈希表|
+|42|[接雨水](https://github.com/MagicalBridge/Blog/issues/44)| 60.8% |困难|数组、双指针|
 |55|[跳跃游戏](https://leetcode-cn.com/problems/jump-game/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/41)|困难|数组、贪心算法|
 |80|[删除排序数组中的重复项 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/32)|中等|数组、双指针|
 |121|[买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/42)|简单|数组|
