@@ -29,9 +29,9 @@
 |35|[搜索插入位置](https://github.com/MagicalBridge/Blog/issues/22)| 45.3% |简单|数组|
 |41|[缺失的第一个正数](https://github.com/MagicalBridge/Blog/issues/34)| 42.6% |困难|数组、哈希表|
 |42|[接雨水](https://github.com/MagicalBridge/Blog/issues/44)| 60.8% |困难|数组、双指针|
-|55|[跳跃游戏](https://leetcode-cn.com/problems/jump-game/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/41)|困难|数组、贪心算法|
-|80|[删除排序数组中的重复项 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/32)|中等|数组、双指针|
-|121|[买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/42)|简单|数组|
+|55|[跳跃游戏](https://github.com/MagicalBridge/Blog/issues/41)|43.5%|困难|数组、贪心算法|
+|80|[删除排序数组中的重复项 II](https://github.com/MagicalBridge/Blog/issues/32)|62.0%|中等|数组、双指针|
+|121|[买卖股票的最佳时机](https://github.com/MagicalBridge/Blog/issues/42)|57.8%|简单|数组|
 |122|[买卖股票的最佳时机II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/43)|简单|数组|
 |134|[加油站](https://leetcode-cn.com/problems/gas-station/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/35)|中等|数组、贪心算法|
 |169|[多数元素](https://leetcode-cn.com/problems/majority-element/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/36)|中等|数组、哈希表|
