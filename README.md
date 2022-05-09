@@ -32,10 +32,10 @@
 |55|[跳跃游戏](https://github.com/MagicalBridge/Blog/issues/41)|43.5%|困难|数组、贪心算法|
 |80|[删除排序数组中的重复项 II](https://github.com/MagicalBridge/Blog/issues/32)|62.0%|中等|数组、双指针|
 |121|[买卖股票的最佳时机](https://github.com/MagicalBridge/Blog/issues/42)|57.8%|简单|数组|
-|122|[买卖股票的最佳时机II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/43)|简单|数组|
-|134|[加油站](https://leetcode-cn.com/problems/gas-station/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/35)|中等|数组、贪心算法|
-|169|[多数元素](https://leetcode-cn.com/problems/majority-element/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/36)|中等|数组、哈希表|
-|189|[旋转数组](https://leetcode-cn.com/problems/rotate-array/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/33)|中等|数组|
+|122|[买卖股票的最佳时机II](https://github.com/MagicalBridge/Blog/issues/43)| 70.3%|简单|数组|
+|134|[加油站](https://github.com/MagicalBridge/Blog/issues/35)| 54.2% |中等|数组、贪心算法|
+|169|[多数元素](https://github.com/MagicalBridge/Blog/issues/36)|66.7%|中等|数组、哈希表|
+|189|[轮转数组](https://github.com/MagicalBridge/Blog/issues/33)| 44.3% |中等|数组|
 |206|[翻转链表](https://leetcode-cn.com/problems/reverse-linked-list/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/30)|简单|链表|
 |217|[存在重复元素](https://leetcode-cn.com/problems/contains-duplicate/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/40)|简单|数组、哈希表|
 |229|[求众数II](https://leetcode-cn.com/problems/majority-element-ii/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/37)|中等|数组、哈希表|
