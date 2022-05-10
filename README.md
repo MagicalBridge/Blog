@@ -36,13 +36,13 @@
 |134|[加油站](https://github.com/MagicalBridge/Blog/issues/35)| 54.2% |中等|数组、贪心算法|
 |169|[多数元素](https://github.com/MagicalBridge/Blog/issues/36)|66.7%|中等|数组、哈希表|
 |189|[轮转数组](https://github.com/MagicalBridge/Blog/issues/33)| 44.3% |中等|数组|
-|206|[翻转链表](https://leetcode-cn.com/problems/reverse-linked-list/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/30)|简单|链表|
-|217|[存在重复元素](https://leetcode-cn.com/problems/contains-duplicate/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/40)|简单|数组、哈希表|
-|229|[求众数II](https://leetcode-cn.com/problems/majority-element-ii/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/37)|中等|数组、哈希表|
-|243|[最短单词距离](https://leetcode-cn.com/problems/shortest-word-distance/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/38)|中等|数组|
-|274|[最短单词距离](https://leetcode-cn.com/problems/h-index/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/39)|中等|数组|
-|287|[寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/45)|中等|数组、二分法、哈希表|
-|415|[字符串相加](https://leetcode-cn.com/problems/add-strings/solution/zi-fu-chuan-xiang-jia-by-leetcode-solution/)| [javaScript](https://github.com/MagicalBridge/Blog/issues/31)|简单|字符串|
+|206|[翻转链表](https://github.com/MagicalBridge/Blog/issues/30)|72.9% |简单|链表|
+|217|[存在重复元素](https://github.com/MagicalBridge/Blog/issues/40)|55.6%|简单|数组、哈希表|
+|229|[求众数II](https://github.com/MagicalBridge/Blog/issues/37)| 53.6% |中等|数组、哈希表|
+|243|[最短单词距离](https://github.com/MagicalBridge/Blog/issues/38)| 66.1% |中等|数组|
+|274|[最短单词距离](https://github.com/MagicalBridge/Blog/issues/39)| 44.2% |中等|数组|
+|287|[寻找重复数](https://github.com/MagicalBridge/Blog/issues/4)| 64.9% |中等|数组、二分法、哈希表|
+|415|[字符串相加](https://github.com/MagicalBridge/Blog/issues/31)| 54.8% |简单|字符串|
 
 ## 通俗写作
 | 标题 | 写作时间线 | 
