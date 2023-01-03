@@ -47,8 +47,8 @@
 ## 通俗写作
 | 标题 | 写作时间线 | 
 |----|----|
-|[年轻人最应该理解的道理——等价交换](https://github.com/MagicalBridge/Blog/issues/54)|2018年06月04日|
-|[完美是成长的敌人——警惕完美主义](https://github.com/MagicalBridge/Blog/issues/2)|2019年06月13日|
+|[年轻人最应该理解的道理——等价交换](https://github.com/MagicalBridge/Blog/issues/54)|2018-06-04|
+|[完美是成长的敌人——警惕完美主义](https://github.com/MagicalBridge/Blog/issues/2)|2019-06-13|
 |[这项技能，可能是你实现阶级跃迁最需要学习的](https://github.com/MagicalBridge/Blog/issues/7)|2019-07-01|
 |[如果重新回到20岁，我希望这样过自己的生活](https://github.com/MagicalBridge/Blog/issues/8)|2019-07-03|
 |[百分之90的人都没有认真思考过的问题，想不清楚，遗憾终生](https://github.com/MagicalBridge/Blog/issues/9)|2019-07-10|
@@ -57,6 +57,8 @@
 |[不理解人生的阶段性状态,如何规划人生？](https://github.com/MagicalBridge/Blog/issues/18)|2019-08-15|
 |[想要有所成就，除了看到努力，我们到底还忽略了什么？](https://github.com/MagicalBridge/Blog/issues/21)|2019-08-16|
 |[你理解的一万小时定律可能都是错的](https://github.com/MagicalBridge/Blog/issues/19)|2019-08-17|
+|[写给我的2022](https://mp.weixin.qq.com/s/osaNttX2aajxSle7mlTDsQ)|2023-01-01|
+|[我有一个写总结好方法，分享给你](我有一个写总结好方法，分享给你)|2023-01-02|
 
 
 ## License
