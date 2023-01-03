@@ -57,8 +57,6 @@
 |[不理解人生的阶段性状态,如何规划人生？](https://github.com/MagicalBridge/Blog/issues/18)|2019-08-15|
 |[想要有所成就，除了看到努力，我们到底还忽略了什么？](https://github.com/MagicalBridge/Blog/issues/21)|2019-08-16|
 |[你理解的一万小时定律可能都是错的](https://github.com/MagicalBridge/Blog/issues/19)|2019-08-17|
-
-
 |[人生的资产和负债是反直觉的](https://mp.weixin.qq.com/s/BQBusXl0Cd8zKpg5mF8nWg)|2022-01-06|
 |[叔本华曾说：“人生就像钟摆，总是徘徊在痛苦和无聊之间。”](https://mp.weixin.qq.com/s/mFelgmTJQYSMkELO0TZmAg)|2022-01-07|
 |[觉知往往从“拥抱悔恨”开始](https://mp.weixin.qq.com/s/19PCjpZsM4hcPgEaGALUYg)|2022-01-08|
@@ -69,7 +67,6 @@
 |[祥子决定不拉车了](https://mp.weixin.qq.com/s/JKIbo6A9a6h_MLSki-M1TA)|2022-07-13|
 |[写给我的2022](https://mp.weixin.qq.com/s/osaNttX2aajxSle7mlTDsQ)|2023-01-01|
 |[我有一个写总结好方法，分享给你](https://mp.weixin.qq.com/s/4AWWVevanhfXqA7RjzEvjg)|2023-01-02|
-
 
 
 
