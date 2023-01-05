@@ -68,7 +68,7 @@
 |[写给我的2022](https://mp.weixin.qq.com/s/osaNttX2aajxSle7mlTDsQ)|2023-01-01|
 |[我有一个写总结好方法，分享给你](https://mp.weixin.qq.com/s/4AWWVevanhfXqA7RjzEvjg)|2023-01-02|
 |[认真对待记账这件事，审视自己的消费习惯](https://mp.weixin.qq.com/s/eGQaNvd126JaiOoy0sSHBA)|2023-01-03|
-
+|[我知道你也和我一样想要获得幸福感](https://mp.weixin.qq.com/s/zkqU9uXqq93-icNSzxddhg)|2023-01-04|
 
 
 ## License
