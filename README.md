@@ -70,6 +70,7 @@
 |[认真对待记账这件事，审视自己的消费习惯](https://mp.weixin.qq.com/s/eGQaNvd126JaiOoy0sSHBA)|2023-01-03|
 |[我知道你也和我一样想要获得幸福感](https://mp.weixin.qq.com/s/zkqU9uXqq93-icNSzxddhg)|2023-01-04|
 |[回忆儿时二三事](https://mp.weixin.qq.com/s/MQiA6qhiA8pdtU5gpK0i-g)|2023-01-05|
+|[身体更健康，人生更自由](https://mp.weixin.qq.com/s/pzUa7-5DuRehboKpTVqrdA)|2023-01-06|
 
 
 ## License
