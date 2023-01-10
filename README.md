@@ -74,6 +74,7 @@
 |[身体更健康，人生更自由](https://mp.weixin.qq.com/s/pzUa7-5DuRehboKpTVqrdA)|2023-01-06|
 |[如何获得身体和精神的双重自由](https://mp.weixin.qq.com/s/_svoq08m1Ryb3XP0j6H3-A)|2023-01-07|
 |[设定清单和目标的重要性](https://mp.weixin.qq.com/s/Fqm_zaUpwEiXxzVWLwEMkA)|2023-01-08|
+|[2023年1月第一周小结](https://mp.weixin.qq.com/s/e-sQB-wI9O3gcn0ZAMU_Cw)|2023-01-09|
 
 
 
