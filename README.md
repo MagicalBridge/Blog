@@ -1,19 +1,20 @@
-# 褚鹏飞的博客
+# my blog
 
-## 最新 
+## rencent update 
 2023年11月08号添加最新文章目录
 
-## 公众号
-|微信（本人）|公众号|技术博客|
+<!-- ## 公众号
+|weichat（本人）|公众号|技术博客|
 |:----:|:----:|:----:|
 |<img src="./public-repository/images/weichat.png" width="120">|<img src="./public-repository/images/weipublic.jpeg" width="120">|<img src="./public-repository/images/blog.png" width="120">|
-|褚鹏飞|一些生活的思考|[Github.io](https://magicalbridge.github.io/)|
-|进褚鹏飞的读者群|不定时更新|文章同步更新|
+|louis|一些生活的思考|[Github.io](https://magicalbridge.github.io/)|
+|进褚鹏飞的读者群|不定时更新|文章同步更新| -->
 
 ## 专栏
 * [掘金](https://juejin.cn/user/3509296845554909)
 
-## leetCode算法题解:
+
+## leetCode:
 | # | Title | Solution | Difficulty | Label|
 | --- | ----- | -------- |-------- | ------ |
 |1|[两数之和](https://github.com/MagicalBridge/Blog/issues/1) | 52.5% |简单| 数组、Map|
@@ -42,7 +43,7 @@
 |287|[寻找重复数](https://github.com/MagicalBridge/Blog/issues/4)| 64.9% |中等|数组、二分法、哈希表|
 |415|[字符串相加](https://github.com/MagicalBridge/Blog/issues/31)| 54.8% |简单|字符串|
 
-## 通俗写作
+<!-- ## 通俗写作
 | 标题 | 写作时间线 | 
 |----|----|
 |[年轻人最应该理解的道理——等价交换](https://github.com/MagicalBridge/Blog/issues/54)|2018-06-04|
@@ -74,12 +75,11 @@
 |[设定清单和目标的重要性](https://mp.weixin.qq.com/s/Fqm_zaUpwEiXxzVWLwEMkA)|2023-01-08|
 |[2023年1月第一周小结](https://mp.weixin.qq.com/s/e-sQB-wI9O3gcn0ZAMU_Cw)|2023-01-09|
 |[努力其实是一种需要学习的才能](https://mp.weixin.qq.com/s/vBx9xJUXWAruz06Vmvvtog)|2023-01-10|
-|[人生是一个不断练习的过程](https://mp.weixin.qq.com/s/Ov7E-arM0eqTMDHt12eUuw)|2023-01-11|
+|[人生是一个不断练习的过程](https://mp.weixin.qq.com/s/Ov7E-arM0eqTMDHt12eUuw)|2023-01-11| -->
 
 
-## License
-
-所有文章采用[知识共享署名-非商业性使用-相同方式共享 3.0 中国大陆许可协议](http://creativecommons.org/licenses/by-nc-sa/3.0/cn/)进行许可。
+<!-- ## License -->
+<!-- 所有文章采用[知识共享署名-非商业性使用-相同方式共享 3.0 中国大陆许可协议](http://creativecommons.org/licenses/by-nc-sa/3.0/cn/)进行许可。 -->
 
 
 
