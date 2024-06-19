@@ -20,8 +20,8 @@
 
 
 ## Solidity
-[Solidity语言中的继承](https://github.com/MagicalBridge/Blog/issues/56)
-[Solidity中的payable关键字](https://github.com/MagicalBridge/Blog/issues/57)
+1.[Solidity语言中的继承](https://github.com/MagicalBridge/Blog/issues/56)
+2.[Solidity中的payable关键字](https://github.com/MagicalBridge/Blog/issues/57)
 
 
 ## leetCode:
