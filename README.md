@@ -24,6 +24,9 @@
 
 2.[Solidity中的payable关键字](https://github.com/MagicalBridge/Blog/issues/57)
 
+## Rust
+1.[Rust入门系列：01、第一个rust程序](https://github.com/MagicalBridge/Blog/issues/58)
+
 
 ## leetCode:
 | # | Title | Solution | Difficulty | Label|
