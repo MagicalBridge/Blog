@@ -19,6 +19,11 @@
 * [掘金](https://juejin.cn/user/3509296845554909)
 
 
+## Solidity
+[Solidity语言中的继承](https://github.com/MagicalBridge/Blog/issues/56)
+[Solidity中的payable关键字](https://github.com/MagicalBridge/Blog/issues/57)
+
+
 ## leetCode:
 | # | Title | Solution | Difficulty | Label|
 | --- | ----- | -------- |-------- | ------ |
