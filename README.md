@@ -13,7 +13,7 @@
 ## Contact Information
 |WeChat（myself）|WeChat Official Account|
 |:----:|:----:|
-|<img src="./public-repository/images/weichat.png" width="120">|<img src="./public-repository/images/weipublic.jpeg" width="120">|<img src="./public-repository/images/blog.png" width="120">|
+|<img src="./public-repository/images/weichat.png" width="120">|<img src="./public-repository/images/weipublicnew.jpg" width="120">|<img src="./public-repository/images/blog.png" width="120">|
 
 ## Tech Writing Column
 * [掘金](https://juejin.cn/user/3509296845554909)
