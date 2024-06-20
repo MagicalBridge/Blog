@@ -19,14 +19,14 @@
 * [掘金](https://juejin.cn/user/3509296845554909)
 
 
-## Solidity
+## The Solidity Series
 1.[Solidity语言中的继承](https://github.com/MagicalBridge/Blog/issues/56)
 
 2.[Solidity中的payable关键字](https://github.com/MagicalBridge/Blog/issues/57)
 
 3.[Solidity中的只读函数](https://github.com/MagicalBridge/Blog/issues/61)
 
-## Rust
+## The Rust Series 
 1.[Rust入门系列：01、第一个rust程序](https://github.com/MagicalBridge/Blog/issues/58)
 
 2.[Rust入门系列：02、Rust入门系列：Cargo: Rust 的包管理和构建系统](https://github.com/MagicalBridge/Blog/issues/59)
