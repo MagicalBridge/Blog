@@ -33,6 +33,8 @@
 
 3.[Rust入门系列：03、一个简单的猜数字游戏](https://github.com/MagicalBridge/Blog/issues/60)
 
+4.[Rust入门系列：04、猜数字游戏，引入rand随机数模块](https://github.com/MagicalBridge/Blog/issues/62)
+
 
 ## leetCode:
 | # | Title | Solution | Difficulty | Label|
