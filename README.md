@@ -24,7 +24,17 @@
 
 2.[Solidity中的payable关键字](https://github.com/MagicalBridge/Blog/issues/57)
 
-3.[Solidity中的只读函数](https://github.com/MagicalBridge/Blog/issues/61)
+3.[Solidity中的回退函数详解](https://github.com/MagicalBridge/Blog/issues/63)
+
+4.[Solidity中的异常处理](https://github.com/MagicalBridge/Blog/issues/64)
+
+5.[Solidity中的工厂合约](https://github.com/MagicalBridge/Blog/issues/65)
+
+6.[Solidity中的只读函数](https://github.com/MagicalBridge/Blog/issues/61)
+
+7.[Solidity中的Ownable合约](https://github.com/MagicalBridge/Blog/issues/66)
+
+8.[Solidity中的多线继承](https://github.com/MagicalBridge/Blog/issues/67)
 
 ## The Rust Series 
 1.[Rust入门系列：01、第一个rust程序](https://github.com/MagicalBridge/Blog/issues/58)
