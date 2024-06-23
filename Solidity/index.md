@@ -14,3 +14,7 @@
 7.[Solidity中的Ownable合约](https://github.com/MagicalBridge/Blog/issues/66)
 
 8.[Solidity中的多线继承](https://github.com/MagicalBridge/Blog/issues/67)
+
+9.[Solidity中的继承：如何运行父级函数的构造函数](https://github.com/MagicalBridge/Blog/issues/68)
+
+10.[Solidity中发送主币的三种方式](https://github.com/MagicalBridge/Blog/issues/69)
