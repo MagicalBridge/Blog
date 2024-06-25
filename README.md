@@ -57,6 +57,7 @@
 
 7.[Rust入门系列：07、Rust中的数据类型之：复合类型](https://github.com/MagicalBridge/Blog/issues/72)
 
+8.[Rust入门系列：08、Rust中的函数和控制流](https://github.com/MagicalBridge/Blog/issues/73)
 
 
 ## leetCode:
