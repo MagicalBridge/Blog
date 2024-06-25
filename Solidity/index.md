@@ -18,3 +18,5 @@
 9.[Solidity中的继承：如何运行父级函数的构造函数](https://github.com/MagicalBridge/Blog/issues/68)
 
 10.[Solidity中发送主币的三种方式](https://github.com/MagicalBridge/Blog/issues/69)
+
+11.[Solidity中的call和staticcall](https://github.com/MagicalBridge/Blog/issues/73)

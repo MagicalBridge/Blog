@@ -40,6 +40,8 @@
 
 10.[Solidity中发送主币的三种方式](https://github.com/MagicalBridge/Blog/issues/69)
 
+11.[Solidity中的call和staticcall](https://github.com/MagicalBridge/Blog/issues/73)
+
 ## The Rust Series 
 1.[Rust入门系列：01、第一个rust程序](https://github.com/MagicalBridge/Blog/issues/58)
 
