@@ -20,3 +20,6 @@
 10.[Solidity中发送主币的三种方式](https://github.com/MagicalBridge/Blog/issues/69)
 
 11.[Solidity中的call和staticcall](https://github.com/MagicalBridge/Blog/issues/73)
+
+12.[Solidity中的delegatecall](https://github.com/MagicalBridge/Blog/issues/75)
+

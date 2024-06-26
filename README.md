@@ -42,6 +42,8 @@
 
 11.[Solidity中的call和staticcall](https://github.com/MagicalBridge/Blog/issues/73)
 
+12.[Solidity中的delegatecall](https://github.com/MagicalBridge/Blog/issues/75)
+
 ## The Rust Series 
 1.[Rust入门系列：01、第一个rust程序](https://github.com/MagicalBridge/Blog/issues/58)
 
@@ -57,7 +59,7 @@
 
 7.[Rust入门系列：07、Rust中的数据类型之：复合类型](https://github.com/MagicalBridge/Blog/issues/72)
 
-8.[Rust入门系列：08、Rust中的函数和控制流](https://github.com/MagicalBridge/Blog/issues/73)
+8.[Rust入门系列：08、Rust中的函数和控制流](https://github.com/MagicalBridge/Blog/issues/74)
 
 
 ## leetCode:
