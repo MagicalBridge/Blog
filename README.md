@@ -56,6 +56,11 @@
 
 9.[Rust入门系列：09、万字长文，一次性讲明白Rust中的所有权](https://github.com/MagicalBridge/Blog/issues/76)
 
+10.[Rust入门系列：10、Rust中的引用和借用](https://github.com/MagicalBridge/Blog/issues/77)
+
+
+
+
 
 ## leetCode:
 | # | Title | Solution | Difficulty | Label|
