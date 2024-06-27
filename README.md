@@ -9,8 +9,7 @@
 |<img src="./public-repository/images/weichat.png" width="120">|<img src="./public-repository/images/weipublicnew.jpg" width="120">|<img src="./public-repository/images/blog.png" width="120">|
 
 ## Tech Writing Column
-* [掘金](https://juejin.cn/user/3509296845554909)
-
+* [掘金](https://juejin.cn/user/3509296845554909/columns)
 
 ## The Solidity Series
 1.[Solidity语言中的继承](https://github.com/MagicalBridge/Blog/issues/56)
@@ -37,6 +36,9 @@
 
 12.[Solidity中的delegatecall](https://github.com/MagicalBridge/Blog/issues/75)
 
+13.[Solidity中的自毁合约](https://github.com/MagicalBridge/Blog/issues/78)
+
+
 ## The Rust Series 
 1.[Rust入门系列：01、第一个rust程序](https://github.com/MagicalBridge/Blog/issues/58)
 
@@ -59,10 +61,7 @@
 10.[Rust入门系列：10、Rust中的引用和借用](https://github.com/MagicalBridge/Blog/issues/77)
 
 
-
-
-
-## leetCode:
+## LeetCode All In One:
 | # | Title | Solution | Difficulty | Label|
 | --- | ----- | -------- |-------- | ------ |
 |1|[两数之和](https://github.com/MagicalBridge/Blog/issues/1) | 52.5% |简单| 数组、Map|

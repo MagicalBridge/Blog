@@ -23,3 +23,6 @@
 
 12.[Solidity中的delegatecall](https://github.com/MagicalBridge/Blog/issues/75)
 
+13.[Solidity中的自毁合约](https://github.com/MagicalBridge/Blog/issues/78)
+
+
