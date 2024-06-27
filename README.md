@@ -61,6 +61,8 @@
 
 8.[Rust入门系列：08、Rust中的函数和控制流](https://github.com/MagicalBridge/Blog/issues/74)
 
+9.[Rust入门系列：09、万字长文，一次性讲明白Rust中的所有权](https://github.com/MagicalBridge/Blog/issues/76)
+
 
 ## leetCode:
 | # | Title | Solution | Difficulty | Label|
