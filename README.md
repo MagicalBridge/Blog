@@ -64,8 +64,8 @@
 ## LeetCode All In One:
 | # | Title | Solution | Difficulty | Label|
 | --- | ----- | -------- |-------- | ------ |
-|1|[两数之和](https://github.com/MagicalBridge/Blog/issues/1) | 52.5% |简单| 数组、Map|
-|2|[两数相加](https://github.com/MagicalBridge/Blog/issues/3)| 41.7% |中等|链表、数学|
+|1|[Two Sum](https://github.com/MagicalBridge/leetcode-all-in-one/issues/1) | 52.5% |Easy| Array、Hash Table|
+<!-- |2|[两数相加](https://github.com/MagicalBridge/Blog/issues/3)| 41.7% |中等|链表、数学|
 |3|[无重复字符的最长子串](https://github.com/MagicalBridge/Blog/issues/4)| 38.7% |中等|字符串|
 |5|[最长回文串](https://github.com/MagicalBridge/Blog/issues/55)| 36.6% |中等|字符串|
 |7|[整数反转](https://github.com/MagicalBridge/Blog/issues/24)|35.3%|简单|字符串|
@@ -88,7 +88,7 @@
 |243|[最短单词距离](https://github.com/MagicalBridge/Blog/issues/38)| 66.1% |中等|数组|
 |274|[最短单词距离](https://github.com/MagicalBridge/Blog/issues/39)| 44.2% |中等|数组|
 |287|[寻找重复数](https://github.com/MagicalBridge/Blog/issues/4)| 64.9% |中等|数组、二分法、哈希表|
-|415|[字符串相加](https://github.com/MagicalBridge/Blog/issues/31)| 54.8% |简单|字符串|
+|415|[字符串相加](https://github.com/MagicalBridge/Blog/issues/31)| 54.8% |简单|字符串| -->
 
 <!-- ## 通俗写作
 | 标题 | 写作时间线 | 
