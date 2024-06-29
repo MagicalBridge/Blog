@@ -60,6 +60,9 @@
 
 10.[Rust入门系列：10、Rust中的引用和借用](https://github.com/MagicalBridge/Blog/issues/77)
 
+11.[Rust入门系列：11、万字长文，一次性说透Rust中的字符串和切片](https://github.com/MagicalBridge/Blog/issues/79)
+
+
 
 ## LeetCode All In One:
 | # | Title | Solution | Difficulty | Label|
