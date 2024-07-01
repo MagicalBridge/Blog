@@ -62,6 +62,8 @@
 
 11.[Rust入门系列：11、万字长文，一次性说透Rust中的字符串和切片](https://github.com/MagicalBridge/Blog/issues/79)
 
+12.[Rust入门系列：12、看到Rust中的结构体再也不害怕了](https://github.com/MagicalBridge/Blog/issues/80)
+
 
 
 ## LeetCode All In One:
