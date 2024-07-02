@@ -64,6 +64,10 @@
 
 12.[Rust入门系列：12、看到Rust中的结构体再也不害怕了](https://github.com/MagicalBridge/Blog/issues/80)
 
+13.[Rust入门系列：13、Rust中的枚举](https://github.com/MagicalBridge/Blog/issues/81)
+
+14.[Rust入门系列：13、Rust中的方法Method](https://github.com/MagicalBridge/Blog/issues/82)
+
 
 
 ## LeetCode All In One:
