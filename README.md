@@ -38,6 +38,9 @@
 
 13.[Solidity中的自毁合约](https://github.com/MagicalBridge/Blog/issues/78)
 
+14.[手把手教你实现Bank智能合约](https://github.com/MagicalBridge/Blog/issues/83)
+
+
 
 ## The Rust Series 
 1.[Rust入门系列：01、第一个rust程序](https://github.com/MagicalBridge/Blog/issues/58)
@@ -66,7 +69,7 @@
 
 13.[Rust入门系列：13、Rust中的枚举](https://github.com/MagicalBridge/Blog/issues/81)
 
-14.[Rust入门系列：13、Rust中的方法Method](https://github.com/MagicalBridge/Blog/issues/82)
+14.[Rust入门系列：14、Rust中的方法Method](https://github.com/MagicalBridge/Blog/issues/82)
 
 
 
