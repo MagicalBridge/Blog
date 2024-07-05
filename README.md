@@ -77,8 +77,8 @@
 | # | Title | Solution | Difficulty | Label|
 | --- | ----- | -------- |-------- | ------ |
 |1|[Two Sum](https://github.com/MagicalBridge/leetcode-all-in-one/issues/1) | 52.5% |Easy| Array、Hash Table|
-<!-- |2|[两数相加](https://github.com/MagicalBridge/Blog/issues/3)| 41.7% |中等|链表、数学|
-|3|[无重复字符的最长子串](https://github.com/MagicalBridge/Blog/issues/4)| 38.7% |中等|字符串|
+|2|[两数相加](https://github.com/MagicalBridge/leetcode-all-in-one/issues/2)| 41.7% |Medium|linked-list、Math|
+<!-- |3|[无重复字符的最长子串](https://github.com/MagicalBridge/Blog/issues/4)| 38.7% |中等|字符串|
 |5|[最长回文串](https://github.com/MagicalBridge/Blog/issues/55)| 36.6% |中等|字符串|
 |7|[整数反转](https://github.com/MagicalBridge/Blog/issues/24)|35.3%|简单|字符串|
 |11|[盛最多水的容器](https://github.com/MagicalBridge/Blog/issues/11)|61.4% |中等|数组|
