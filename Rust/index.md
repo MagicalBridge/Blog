@@ -27,6 +27,9 @@
 
 14.[Rust入门系列：13、Rust中的方法Method](https://github.com/MagicalBridge/Blog/issues/82)
 
+15.[Rust入门系列：15、Rust中的项目、包和模块](https://github.com/MagicalBridge/Blog/issues/85)
+
+
 
 
 
