@@ -42,6 +42,8 @@
 
 15.[手把手教你实现BigBank智能合约](https://github.com/MagicalBridge/Blog/issues/84)
 
+16.[手把手教你实现TokenBank智能合约](https://github.com/MagicalBridge/Blog/issues/86)
+
 
 
 ## The Rust Series 
