@@ -31,6 +31,8 @@
 
 16.[手把手教你实现TokenBank智能合约](https://github.com/MagicalBridge/Blog/issues/86)
 
+17.[一文说清楚ERC1363规范为什么是ERC20的理想替代](https://github.com/MagicalBridge/Blog/issues/87)
+
 
 
 
