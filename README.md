@@ -83,7 +83,10 @@
 ## The UniswapV1 Series
 
 1.[手把手教你从0到1构建Uniswap V1：part1](https://github.com/MagicalBridge/Blog/issues/91)
-1.[手把手教你从0到1构建Uniswap V1：part2](https://github.com/MagicalBridge/Blog/issues/92)
+
+2.[手把手教你从0到1构建Uniswap V1：part2](https://github.com/MagicalBridge/Blog/issues/92)
+
+3.[手把手教你从0到1构建Uniswap V1：part2](https://github.com/MagicalBridge/Blog/issues/93)
 
 ## The Next.js Series
 
