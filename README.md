@@ -46,6 +46,8 @@
 
 17.[一文说清楚ERC1363规范为什么是ERC20的理想替代](https://github.com/MagicalBridge/Blog/issues/87)
 
+17.[一文详解solidity中通过CREATE2操作码](https://github.com/MagicalBridge/Blog/issues/94)
+
 
 
 ## The Rust Series 
@@ -86,7 +88,13 @@
 
 2.[手把手教你从0到1构建Uniswap V1：part2](https://github.com/MagicalBridge/Blog/issues/92)
 
-3.[手把手教你从0到1构建Uniswap V1：part2](https://github.com/MagicalBridge/Blog/issues/93)
+3.[手把手教你从0到1构建Uniswap V1：part3](https://github.com/MagicalBridge/Blog/issues/93)
+
+
+## The UniswapV2 Series
+<!-- 1.[手把手教你从0到1构建Uniswap V2：part1](https://github.com/MagicalBridge/Blog/issues/95) -->
+
+
 
 ## The Next.js Series
 
