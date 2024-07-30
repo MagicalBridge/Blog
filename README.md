@@ -46,7 +46,11 @@
 
 17.[一文说清楚ERC1363规范为什么是ERC20的理想替代](https://github.com/MagicalBridge/Blog/issues/87)
 
-17.[一文详解solidity中通过CREATE2操作码](https://github.com/MagicalBridge/Blog/issues/94)
+18.[深入ethers库的底层实现，源码级别解读ERC191标准](https://github.com/MagicalBridge/Blog/issues/95)
+
+19.[一文详解solidity中通过CREATE2操作码](https://github.com/MagicalBridge/Blog/issues/94)
+
+20.[构建可升级的合约：透明代理 VS UUPS代理](https://github.com/MagicalBridge/Blog/issues/96)
 
 
 
@@ -103,6 +107,10 @@
 2.[Next.js手把手系列：02、路由篇 | App Router](https://github.com/MagicalBridge/Blog/issues/89)
 
 3.[Next.js手把手系列：03、路由篇 | 链接与导航](https://github.com/MagicalBridge/Blog/issues/90)
+
+4.[Next.js手把手系列：04、路由篇 | ](https://github.com/MagicalBridge/Blog/issues/)
+
+5.[Next.js手把手系列：05、路由篇 | ](https://github.com/MagicalBridge/Blog/issues/)
 
 
 
