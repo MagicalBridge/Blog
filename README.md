@@ -96,8 +96,7 @@
 
 
 ## The UniswapV2 Series
-<!-- 1.[手把手教你从0到1构建Uniswap V2：part1](https://github.com/MagicalBridge/Blog/issues/95) -->
-
+1.[手把手教你从0到1构建Uniswap V2：part1](https://github.com/MagicalBridge/Blog/issues/97)
 
 
 ## The Next.js Series
@@ -108,10 +107,11 @@
 
 3.[Next.js手把手系列：03、路由篇 | 链接与导航](https://github.com/MagicalBridge/Blog/issues/90)
 
-4.[Next.js手把手系列：04、路由篇 | ](https://github.com/MagicalBridge/Blog/issues/)
+4.[Next.js手把手系列：04、路由篇 | 动态路由、路由组、平行路由和拦截路由 ](https://github.com/MagicalBridge/Blog/issues/98)
 
-5.[Next.js手把手系列：05、路由篇 | ](https://github.com/MagicalBridge/Blog/issues/)
+5.[Next.js手把手系列：05、路由篇 | 路由处理程序  ](https://github.com/MagicalBridge/Blog/issues/99)
 
+6.[Next.js手把手系列：06、路由篇 | 中间件  ](https://github.com/MagicalBridge/Blog/issues/100)
 
 
 
