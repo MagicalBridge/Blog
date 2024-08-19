@@ -10,6 +10,7 @@
 
 ## Tech Writing Column
 * [掘金](https://juejin.cn/user/3509296845554909/columns)
+* [登链社区](https://learnblockchain.cn/people/20334)
 
 ## The Solidity Series
 1.[Solidity语言中的继承](https://github.com/MagicalBridge/Blog/issues/56)
