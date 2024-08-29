@@ -53,6 +53,8 @@
 
 20.[构建可升级的合约：透明代理 VS UUPS代理](https://github.com/MagicalBridge/Blog/issues/96)
 
+21.[在solidity中，函数的四种可见性区别和联系](https://github.com/MagicalBridge/Blog/issues/101)
+
 
 
 ## The Rust Series 
