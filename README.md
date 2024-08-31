@@ -55,6 +55,8 @@
 
 21.[在solidity中，函数的四种可见性区别和联系](https://github.com/MagicalBridge/Blog/issues/101)
 
+22.[想要写出优秀的Solidity合约，你需要掌握的8种设计模式](https://github.com/MagicalBridge/Blog/issues/103)
+
 
 
 ## The Rust Series 
