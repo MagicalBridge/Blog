@@ -33,6 +33,16 @@
 
 17.[一文说清楚ERC1363规范为什么是ERC20的理想替代](https://github.com/MagicalBridge/Blog/issues/87)
 
+18.[深入ethers库的底层实现，源码级别解读ERC191标准](https://github.com/MagicalBridge/Blog/issues/95)
+
+19.[一文详解solidity中通过CREATE2操作码](https://github.com/MagicalBridge/Blog/issues/94)
+
+20.[构建可升级的合约：透明代理 VS UUPS代理](https://github.com/MagicalBridge/Blog/issues/96)
+
+21.[在solidity中，函数的四种可见性区别和联系](https://github.com/MagicalBridge/Blog/issues/101)
+
+22.[想要写出优秀的Solidity合约，你需要掌握的8种设计模式](https://github.com/MagicalBridge/Blog/issues/103)
+
 
 
 
