@@ -58,6 +58,8 @@
 22.[想要写出优秀的Solidity合约，你需要掌握的8种设计模式](https://github.com/MagicalBridge/Blog/issues/103)
 
 
+## The Web3 Wallet
+
 
 ## The Rust Series 
 1.[Rust入门系列：01、第一个rust程序](https://github.com/MagicalBridge/Blog/issues/58)
@@ -120,6 +122,13 @@
 5.[Next.js手把手系列：05、路由篇 | 路由处理程序  ](https://github.com/MagicalBridge/Blog/issues/99)
 
 6.[Next.js手把手系列：06、路由篇 | 中间件  ](https://github.com/MagicalBridge/Blog/issues/100)
+
+
+## The Go Series
+
+1.[交替打印数字和字母](https://github.com/MagicalBridge/Blog/issues/104)
+
+
 
 
 
