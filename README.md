@@ -125,7 +125,10 @@
 
 
 ## The Go Base Knowledge Series
+
 1.[一文理解Go Modules的相关内容](https://github.com/MagicalBridge/Blog/issues/105)
+
+2.[一文理解Go 可见性规则](https://github.com/MagicalBridge/Blog/issues/106)
 
 ## The Go Practice Series
 
