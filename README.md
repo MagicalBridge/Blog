@@ -124,11 +124,12 @@
 6.[Next.js手把手系列：06、路由篇 | 中间件  ](https://github.com/MagicalBridge/Blog/issues/100)
 
 
-## The Go Series
+## The Go Base Knowledge Series
+1.[一文理解Go Modules的相关内容](https://github.com/MagicalBridge/Blog/issues/105)
+
+## The Go Practice Series
 
 1.[交替打印数字和字母](https://github.com/MagicalBridge/Blog/issues/104)
-
-
 
 
 
