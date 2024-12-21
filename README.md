@@ -130,6 +130,9 @@
 
 2.[一文理解Go语言内部模块可见性规则](https://github.com/MagicalBridge/Blog/issues/106)
 
+3.[Go语言中的init函数](https://github.com/MagicalBridge/Blog/issues/107)
+
+
 ## The Go Practice Series
 
 1.[交替打印数字和字母](https://github.com/MagicalBridge/Blog/issues/104)
