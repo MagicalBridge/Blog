@@ -132,6 +132,8 @@
 
 3.[Go语言中的init函数](https://github.com/MagicalBridge/Blog/issues/107)
 
+4.[Go语言中的new和make的区别](https://github.com/MagicalBridge/Blog/issues/109)
+
 
 ## The Go Practice Series
 
