@@ -130,9 +130,11 @@
 
 2.[一文理解Go语言内部模块可见性规则](https://github.com/MagicalBridge/Blog/issues/106)
 
-3.[Go语言中的init函数](https://github.com/MagicalBridge/Blog/issues/107)
+3.[在Go项目中，如何引包才是最佳实践](https://github.com/MagicalBridge/Blog/issues/110)
 
-4.[Go语言中的new和make的区别](https://github.com/MagicalBridge/Blog/issues/109)
+4.[Go语言中的init函数](https://github.com/MagicalBridge/Blog/issues/107)
+
+5.[Go语言中的new和make的区别](https://github.com/MagicalBridge/Blog/issues/109)
 
 
 ## The Go Practice Series
