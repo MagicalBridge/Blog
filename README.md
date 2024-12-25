@@ -58,9 +58,6 @@
 22.[想要写出优秀的Solidity合约，你需要掌握的8种设计模式](https://github.com/MagicalBridge/Blog/issues/103)
 
 
-## The Web3 Wallet
-
-
 ## The Rust Series 
 1.[Rust入门系列：01、第一个rust程序](https://github.com/MagicalBridge/Blog/issues/58)
 
@@ -142,6 +139,11 @@
 1.[交替打印数字和字母](https://github.com/MagicalBridge/Blog/issues/104)
 
 2.[判断字符串中字符是否全都不同](https://github.com/MagicalBridge/Blog/issues/108)
+
+## The React Native Series
+
+1.[React Native中的View组件：全面解析](https://github.com/MagicalBridge/Blog/issues/111)
+
 
 
 ## LeetCode All In One:
