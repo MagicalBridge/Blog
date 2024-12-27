@@ -144,6 +144,10 @@
 
 1.[React Native中的View组件：全面解析](https://github.com/MagicalBridge/Blog/issues/111)
 
+2.[React Native中的Text组件：全面解析](https://github.com/MagicalBridge/Blog/issues/112)
+
+
+
 
 
 ## LeetCode All In One:
