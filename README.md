@@ -131,7 +131,9 @@
 
 4.[Go语言中的init函数](https://github.com/MagicalBridge/Blog/issues/107)
 
-5.[Go语言中的new和make的区别](https://github.com/MagicalBridge/Blog/issues/109)
+5.[Go语言中的数据类型分类](https://github.com/MagicalBridge/Blog/issues/113)
+
+6.[Go语言中的new和make的区别](https://github.com/MagicalBridge/Blog/issues/109)
 
 
 ## The Go Practice Series
