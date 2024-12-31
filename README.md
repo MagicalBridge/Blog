@@ -135,7 +135,9 @@
 
 6.[Go语言中的数组](https://github.com/MagicalBridge/Blog/issues/114)
 
-7.[Go语言中的new和make的区别](https://github.com/MagicalBridge/Blog/issues/109)
+7.[Go语言中的切片](https://github.com/MagicalBridge/Blog/issues/115)
+
+8.[Go语言中的new和make的区别](https://github.com/MagicalBridge/Blog/issues/109)
 
 
 
