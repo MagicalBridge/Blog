@@ -139,6 +139,8 @@
 
 8.[Go语言中的new和make的区别](https://github.com/MagicalBridge/Blog/issues/109)
 
+9.[Go语言中的高阶函数](https://github.com/MagicalBridge/Blog/issues/116)
+
 
 
 ## The Go Practice Series
