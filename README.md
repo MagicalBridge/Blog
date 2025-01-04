@@ -141,6 +141,7 @@
 
 9.[Go语言中的高阶函数](https://github.com/MagicalBridge/Blog/issues/116)
 
+10.[一文了解 gopkg.in/yaml.v2 这个库的使用和原理](https://github.com/MagicalBridge/Blog/issues/117)
 
 
 ## The Go Practice Series
