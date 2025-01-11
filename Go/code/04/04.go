@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // func main() {
 // 	list := new([]int)
 // 	list = append(list, 1, 2, 3, 4, 5)
@@ -15,12 +13,11 @@ import "fmt"
 // 	fmt.Println(s1)
 // }
 
+// var (
+// 	size := 1024
+// 	maxSize = 1024 * 2
+// )
 
-var (
-	size := 1024
-	maxSize = 1024 * 2
-)
-
-func main() {
-	fmt.Println(size,maxSize)
-}
+// func main() {
+// 	fmt.Println(size,maxSize)
+// }
