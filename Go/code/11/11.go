@@ -9,4 +9,8 @@ func main() {
 	} else {
 		fmt.Println("not nil")
 	}
+
+	s := make(map[string]int)
+	delete(s, "h")
+	fmt.Println(s["h"])
 }
