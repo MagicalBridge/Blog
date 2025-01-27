@@ -125,7 +125,7 @@
 
 1.[一文理解Go Modules的相关内容](https://github.com/MagicalBridge/Blog/issues/105)
 
-2.[一文理解Go语言内部模块可见性规则](https://github.com/MagicalBridge/Blog/issues/106)
+2.[Go语言中内部模块的可见性规则](https://github.com/MagicalBridge/Blog/issues/106)
 
 3.[在Go项目中，如何引包才是最佳实践](https://github.com/MagicalBridge/Blog/issues/110)
 
