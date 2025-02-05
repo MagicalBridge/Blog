@@ -2,13 +2,23 @@ package main
 
 import "fmt"
 
-type MyInt int
+type People interface {
+	Speak(string) string
+}
 
-func (i MyInt) PrintInt() {
-	fmt.Println(i)
+type Student struct{}
+
+func (stu *Student) Speak(think string) (talk string) {
+	if think == "speak" {
+		talk = "speak"
+	} else {
+		talk = "hi"
+	}
+	return
 }
 
 func main() {
-	var i MyInt = 1
-	i.PrintInt()
+	var peo People = Student{}
+	think := "speak"
+	fmt.Println(peo.Speak(think))
 }
