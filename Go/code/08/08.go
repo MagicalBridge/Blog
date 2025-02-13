@@ -19,18 +19,18 @@ func main() {
 	}
 
 	// 编译失败
-	// i := GetValue()
-	// switch i.(type) {
+	i := GetValue()
+	switch i.(type) {
 
-	// case int:
-	// 	fmt.Println("int")
+	case int:
+		fmt.Println("int")
 
-	// case string:
-	// 	fmt.Println("string")
+	case string:
+		fmt.Println("string")
 
-	// case interface{}:
-	// 	fmt.Println("interface")
-	// default:
-	// 	fmt.Println("unknown")
-	// }
+	case interface{}:
+		fmt.Println("interface")
+	default:
+		fmt.Println("unknown")
+	}
 }
