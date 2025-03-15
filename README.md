@@ -89,6 +89,11 @@
 
 15.[Rust入门系列：15、Rust中的项目、包和模块](https://github.com/MagicalBridge/Blog/issues/85)
 
+## The Solana Series
+
+1.[Anchor框架中的declare_id!宏：深入解析与应用](https://github.com/MagicalBridge/Blog/issues/118)
+
+2.[手把手带你写一个solana程序：计数器合约](URL_ADDRESS.com/MagicalBridge/Blog/issues/119)
 
 ## The UniswapV1 Series
 
