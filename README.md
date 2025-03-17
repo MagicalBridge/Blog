@@ -57,6 +57,8 @@
 
 22.[想要写出优秀的Solidity合约，你需要掌握的8种设计模式](https://github.com/MagicalBridge/Blog/issues/103)
 
+23.[一文了解solidity中的常量、状态变量和不可改变量的区别](https://github.com/MagicalBridge/Blog/issues/121)
+
 
 ## The Rust Series 
 1.[Rust入门系列：01、第一个rust程序](https://github.com/MagicalBridge/Blog/issues/58)
