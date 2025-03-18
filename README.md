@@ -97,6 +97,8 @@
 
 2.[手把手带你写一个solana程序：计数器合约](URL_ADDRESS.com/MagicalBridge/Blog/issues/119)
 
+3.[一文介绍Anchor框架的版本管理工具AVM](URL_ADDRESS.com/MagicalBridge/Blog/issues/122)
+
 ## The UniswapV1 Series
 
 1.[手把手教你从0到1构建Uniswap V1：part1](https://github.com/MagicalBridge/Blog/issues/91)
