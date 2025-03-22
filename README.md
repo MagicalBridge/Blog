@@ -114,7 +114,7 @@
 
 2.[手把手教你从0到1构建Uniswap V2：part2](https://github.com/MagicalBridge/Blog/issues/102)
 
-3.[手把手教你从0到1构建Uniswap V2：part3](https://github.com/MagicalBridge/Blog/issues)
+3.[手把手教你从0到1构建Uniswap V2：part3](https://github.com/MagicalBridge/Blog/issues/123)
 
 4.[手把手教你从0到1构建Uniswap V2：part4](https://github.com/MagicalBridge/Blog/issues)
 
