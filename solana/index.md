@@ -5,3 +5,5 @@
 2.[手把手带你写一个solana程序：计数器合约](https://github.com/MagicalBridge/Blog/issues/119)
 
 3.[一文介绍Anchor框架的版本管理工具AVM](https://github.com/MagicalBridge/Blog/issues/122)
+
+4.[一文说透，如何在solana上铸造spl-token ](https://github.com/MagicalBridge/Blog/issues/124)

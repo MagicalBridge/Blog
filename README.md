@@ -99,6 +99,8 @@
 
 3.[一文介绍Anchor框架的版本管理工具AVM](URL_ADDRESS.com/MagicalBridge/Blog/issues/122)
 
+4.[一文说透，如何在solana上铸造spl-token ](https://github.com/MagicalBridge/Blog/issues/124)
+
 ## The UniswapV1 Series
 
 1.[手把手教你从0到1构建Uniswap V1：part1](https://github.com/MagicalBridge/Blog/issues/91)
