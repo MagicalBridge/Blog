@@ -14,7 +14,7 @@ func worker(ctx context.Context, id int) {
 			return
 		default:
 			fmt.Printf("Worker %d is working...\n", id)
-			time.Sleep(1000 * time.Millisecond)
+			time.Sleep(500 * time.Millisecond)
 		}
 	}
 }
@@ -29,7 +29,7 @@ func main() {
 	}
 
 	// 让workers运行一段时间
-	time.Sleep(5 * time.Second)
+	time.Sleep(2 * time.Second)
 
 	// 发送取消信号
 	fmt.Println("Sending cancel signal...")
