@@ -2,6 +2,7 @@ node_modules/
 .travis.yml
 *.swp
 .sass-cache/
+**/*tempCodeRunnerFile
 .DS_Store
 .idea/
 zip/
